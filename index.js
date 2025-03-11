@@ -264,8 +264,10 @@ document.getElementById('themeToggle').addEventListener('click', function () {
   document.body.classList.toggle('dark-mode')
 
   if (document.body.classList.contains('dark-mode')) {
+    // 太阳
     document.getElementById('themeToggle').innerHTML = '&#9788;'
   } else {
+    // 月亮
     document.getElementById('themeToggle').innerHTML = '&#9790;'
   }
 })

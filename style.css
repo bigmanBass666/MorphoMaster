@@ -222,10 +222,28 @@ input.incorrect:focus {
   cursor: pointer;
 }
 
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--text-color);
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   body {
     align-items: baseline;
-    padding: 15px;
+    padding: 10px;
   }
 
   .container {
@@ -246,8 +264,8 @@ input.incorrect:focus {
   }
 
   button {
-    padding: 8px 12px;
-    font-size: 0.8rem;
+    padding: 10px 14px;
+    font-size: 1rem;
   }
 
   .navigation-buttons {
