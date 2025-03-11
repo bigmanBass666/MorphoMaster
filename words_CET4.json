@@ -1,0 +1,338 @@
+[
+  { "type": "noun", "original": "man", "plural": "men", "definition": "男人", "ipa": "/mæn/" },
+  { "type": "noun", "original": "woman", "plural": "women", "definition": "女人", "ipa": "/ˈwʊmən/" },
+  { "type": "noun", "original": "child", "plural": "children", "definition": "孩子", "ipa": "/tʃaɪld/" },
+  { "type": "noun", "original": "tooth", "plural": "teeth", "definition": "牙齿", "ipa": "/tʊθ/" },
+  { "type": "noun", "original": "foot", "plural": "feet", "definition": "脚", "ipa": "/fʊt/" },
+  { "type": "noun", "original": "goose", "plural": "geese", "definition": "鹅", "ipa": "/ɡuːs/" },
+  { "type": "noun", "original": "mouse", "plural": "mice", "definition": "老鼠", "ipa": "/maʊs/" },
+  { "type": "noun", "original": "louse", "plural": "lice", "definition": "虱子", "ipa": "/laʊs/" },
+  { "type": "noun", "original": "ox", "plural": "oxen", "definition": "公牛", "ipa": "/ɒks/" },
+  { "type": "noun", "original": "die", "plural": "dice", "definition": "骰子", "ipa": "/daɪ/" },
+  { "type": "noun", "original": "cactus", "plural": "cacti", "definition": "仙人掌", "ipa": "/ˈkæktəs/" },
+  { "type": "noun", "original": "focus", "plural": "foci", "definition": "焦点", "ipa": "/ˈfəʊkəs/" },
+  { "type": "noun", "original": "fungus", "plural": "fungi", "definition": "真菌", "ipa": "/ˈfʌŋgəs/" },
+  { "type": "noun", "original": "nucleus", "plural": "nuclei", "definition": "原子核", "ipa": "/ˈnjuːkliəs/" },
+  { "type": "noun", "original": "syllabus", "plural": "syllabi", "definition": "课程大纲", "ipa": "/ˈsɪləbəs/" },
+  { "type": "noun", "original": "curriculum", "plural": "curricula", "definition": "课程", "ipa": "/kəˈrɪkjələm/" },
+  { "type": "noun", "original": "bacterium", "plural": "bacteria", "definition": "细菌", "ipa": "/bækˈtɪəriəm/" },
+  { "type": "noun", "original": "criterion", "plural": "criteria", "definition": "标准", "ipa": "/kraɪˈtɪəriən/" },
+  { "type": "noun", "original": "phenomenon", "plural": "phenomena", "definition": "现象", "ipa": "/fɪˈnɒmənɒn/" },
+  { "type": "noun", "original": "analysis", "plural": "analyses", "definition": "分析", "ipa": "/əˈnælɪsɪs/" },
+  { "type": "noun", "original": "thesis", "plural": "theses", "definition": "论文", "ipa": "/ˈθiːsɪs/" },
+  { "type": "noun", "original": "crisis", "plural": "crises", "definition": "危机", "ipa": "/ˈkraɪsɪs/" },
+  { "type": "noun", "original": "basis", "plural": "bases", "definition": "基础", "ipa": "/ˈbeɪsɪs/" },
+  { "type": "noun", "original": "diagnosis", "plural": "diagnoses", "definition": "诊断", "ipa": "/daɪəgˈnəʊsɪs/" },
+  { "type": "noun", "original": "hypothesis", "plural": "hypotheses", "definition": "假设", "ipa": "/haɪˈpɒθəsɪs/" },
+  { "type": "noun", "original": "index", "plural": "indices", "definition": "索引", "ipa": "/ˈɪndeks/" },
+  { "type": "noun", "original": "matrix", "plural": "matrices", "definition": "矩阵", "ipa": "/ˈmeɪtrɪks/" },
+  { "type": "noun", "original": "vertex", "plural": "vertices", "definition": "顶点", "ipa": "/ˈvɜːteks/" },
+  { "type": "noun", "original": "medium", "plural": "media", "definition": "媒体", "ipa": "/ˈmiːdiəm/" },
+  { "type": "verb", "original": "eat", "past": "ate", "pastParticiple": "eaten", "definition": "吃", "ipa": "/iːt/" },
+  {
+    "type": "verb",
+    "original": "become",
+    "past": "became",
+    "pastParticiple": "become",
+    "definition": "变成",
+    "ipa": "/bɪˈkʌm/"
+  },
+  {
+    "type": "verb",
+    "original": "begin",
+    "past": "began",
+    "pastParticiple": "begun",
+    "definition": "开始",
+    "ipa": "/bɪˈɡɪn/"
+  },
+  {
+    "type": "verb",
+    "original": "bend",
+    "past": "bent",
+    "pastParticiple": "bent",
+    "definition": "弯曲",
+    "ipa": "/bend/"
+  },
+  {
+    "type": "verb",
+    "original": "bear",
+    "past": "bore",
+    "pastParticiple": "born",
+    "definition": "生",
+    "ipa": "/beə(r)/"
+  },
+  {
+    "type": "verb",
+    "original": "buy",
+    "past": "bought",
+    "pastParticiple": "bought",
+    "definition": "买",
+    "ipa": "/baɪ/"
+  },
+  {
+    "type": "verb",
+    "original": "break",
+    "past": "broke",
+    "pastParticiple": "broken",
+    "definition": "打破",
+    "ipa": "/breɪk/"
+  },
+  {
+    "type": "verb",
+    "original": "bring",
+    "past": "brought",
+    "pastParticiple": "brought",
+    "definition": "带来",
+    "ipa": "/brɪŋ/"
+  },
+  {
+    "type": "verb",
+    "original": "build",
+    "past": "built",
+    "pastParticiple": "built",
+    "definition": "建造",
+    "ipa": "/bɪld/"
+  },
+  {
+    "type": "verb",
+    "original": "burn",
+    "past": "burnt",
+    "pastParticiple": "burnt",
+    "definition": "燃烧",
+    "ipa": "/bɜːrn/"
+  },
+  {
+    "type": "verb",
+    "original": "catch",
+    "past": "caught",
+    "pastParticiple": "caught",
+    "definition": "抓住",
+    "ipa": "/kætʃ/"
+  },
+  {
+    "type": "verb",
+    "original": "choose",
+    "past": "chose",
+    "pastParticiple": "chosen",
+    "definition": "选择",
+    "ipa": "/tʃuːz/"
+  },
+  { "type": "verb", "original": "cut", "past": "cut", "pastParticiple": "cut", "definition": "切割", "ipa": "/kʌt/" },
+  {
+    "type": "verb",
+    "original": "draw",
+    "past": "drew",
+    "pastParticiple": "drawn",
+    "definition": "画画",
+    "ipa": "/drɔː(r)/"
+  },
+  {
+    "type": "verb",
+    "original": "drive",
+    "past": "drove",
+    "pastParticiple": "driven",
+    "definition": "驾驶",
+    "ipa": "/draɪv/"
+  },
+  {
+    "type": "verb",
+    "original": "drink",
+    "past": "drank",
+    "pastParticiple": "drunk",
+    "definition": "喝",
+    "ipa": "/drɪŋk/"
+  },
+  { "type": "verb", "original": "fly", "past": "flew", "pastParticiple": "flown", "definition": "飞", "ipa": "/flaɪ/" },
+  {
+    "type": "verb",
+    "original": "fight",
+    "past": "fought",
+    "pastParticiple": "fought",
+    "definition": "战斗",
+    "ipa": "/faɪt/"
+  },
+  {
+    "type": "verb",
+    "original": "find",
+    "past": "found",
+    "pastParticiple": "found",
+    "definition": "找到",
+    "ipa": "/faɪnd/"
+  },
+  {
+    "type": "verb",
+    "original": "freeze",
+    "past": "froze",
+    "pastParticiple": "frozen",
+    "definition": "冻结",
+    "ipa": "/friːz/"
+  },
+  { "type": "verb", "original": "get", "past": "got", "pastParticiple": "got", "definition": "得到", "ipa": "/ɡet/" },
+  { "type": "verb", "original": "give", "past": "gave", "pastParticiple": "given", "definition": "给", "ipa": "/ɡɪv/" },
+  { "type": "verb", "original": "go", "past": "went", "pastParticiple": "gone", "definition": "去", "ipa": "/ɡəʊ/" },
+  {
+    "type": "verb",
+    "original": "grow",
+    "past": "grew",
+    "pastParticiple": "grown",
+    "definition": "生长",
+    "ipa": "/ɡrəʊ/"
+  },
+  {
+    "type": "verb",
+    "original": "hang",
+    "past": "hung",
+    "pastParticiple": "hung",
+    "definition": "悬挂",
+    "ipa": "/hæŋ/"
+  },
+  { "type": "verb", "original": "have", "past": "had", "pastParticiple": "had", "definition": "有", "ipa": "/hæv/" },
+  {
+    "type": "verb",
+    "original": "hear",
+    "past": "heard",
+    "pastParticiple": "heard",
+    "definition": "听到",
+    "ipa": "/hɪə(r)/"
+  },
+  {
+    "type": "verb",
+    "original": "keep",
+    "past": "kept",
+    "pastParticiple": "kept",
+    "definition": "保持",
+    "ipa": "/kiːp/"
+  },
+  {
+    "type": "verb",
+    "original": "know",
+    "past": "knew",
+    "pastParticiple": "known",
+    "definition": "知道",
+    "ipa": "/nəʊ/"
+  },
+  { "type": "verb", "original": "lay", "past": "laid", "pastParticiple": "laid", "definition": "放置", "ipa": "/leɪ/" },
+  { "type": "verb", "original": "lead", "past": "led", "pastParticiple": "led", "definition": "领导", "ipa": "/liːd/" },
+  {
+    "type": "verb",
+    "original": "learn",
+    "past": "learnt",
+    "pastParticiple": "learnt",
+    "definition": "学习",
+    "ipa": "/lɜːrn/"
+  },
+  {
+    "type": "verb",
+    "original": "make",
+    "past": "made",
+    "pastParticiple": "made",
+    "definition": "制作",
+    "ipa": "/meɪk/"
+  },
+  { "type": "verb", "original": "meet", "past": "met", "pastParticiple": "met", "definition": "见面", "ipa": "/miːt/" },
+  { "type": "verb", "original": "pay", "past": "paid", "pastParticiple": "paid", "definition": "支付", "ipa": "/peɪ/" },
+  { "type": "verb", "original": "put", "past": "put", "pastParticiple": "put", "definition": "放", "ipa": "/pʊt/" },
+  { "type": "verb", "original": "read", "past": "read", "pastParticiple": "read", "definition": "读", "ipa": "/riːd/" },
+  {
+    "type": "verb",
+    "original": "ring",
+    "past": "rang",
+    "pastParticiple": "rung",
+    "definition": "响铃",
+    "ipa": "/rɪŋ/"
+  },
+  {
+    "type": "verb",
+    "original": "rise",
+    "past": "rose",
+    "pastParticiple": "risen",
+    "definition": "升起",
+    "ipa": "/raɪz/"
+  },
+  { "type": "verb", "original": "run", "past": "ran", "pastParticiple": "run", "definition": "跑", "ipa": "/rʌn/" },
+  { "type": "verb", "original": "see", "past": "saw", "pastParticiple": "seen", "definition": "看见", "ipa": "/siː/" },
+  { "type": "verb", "original": "say", "past": "said", "pastParticiple": "said", "definition": "说", "ipa": "/seɪ/" },
+  { "type": "verb", "original": "sing", "past": "sang", "pastParticiple": "sung", "definition": "唱", "ipa": "/sɪŋ/" },
+  { "type": "verb", "original": "sit", "past": "sat", "pastParticiple": "sat", "definition": "坐", "ipa": "/sɪt/" },
+  {
+    "type": "verb",
+    "original": "sleep",
+    "past": "slept",
+    "pastParticiple": "slept",
+    "definition": "睡觉",
+    "ipa": "/sliːp/"
+  },
+  { "type": "verb", "original": "sell", "past": "sold", "pastParticiple": "sold", "definition": "卖", "ipa": "/sel/" },
+  {
+    "type": "verb",
+    "original": "send",
+    "past": "sent",
+    "pastParticiple": "sent",
+    "definition": "发送",
+    "ipa": "/send/"
+  },
+  {
+    "type": "verb",
+    "original": "speak",
+    "past": "spoke",
+    "pastParticiple": "spoken",
+    "definition": "说",
+    "ipa": "/spiːk/"
+  },
+  {
+    "type": "verb",
+    "original": "steal",
+    "past": "stole",
+    "pastParticiple": "stolen",
+    "definition": "偷",
+    "ipa": "/stiːl/"
+  },
+  {
+    "type": "verb",
+    "original": "swim",
+    "past": "swam",
+    "pastParticiple": "swum",
+    "definition": "游泳",
+    "ipa": "/swɪm/"
+  },
+  {
+    "type": "verb",
+    "original": "take",
+    "past": "took",
+    "pastParticiple": "taken",
+    "definition": "拿",
+    "ipa": "/teɪk/"
+  },
+  {
+    "type": "verb",
+    "original": "teach",
+    "past": "taught",
+    "pastParticiple": "taught",
+    "definition": "教",
+    "ipa": "/tiːtʃ/"
+  },
+  {
+    "type": "verb",
+    "original": "tear",
+    "past": "tore",
+    "pastParticiple": "torn",
+    "definition": "撕",
+    "ipa": "/tɪə(r)/"
+  },
+  {
+    "type": "verb",
+    "original": "understand",
+    "past": "understood",
+    "pastParticiple": "understood",
+    "definition": "理解",
+    "ipa": "/ˌʌndərstænd/"
+  },
+  {
+    "type": "verb",
+    "original": "write",
+    "past": "wrote",
+    "pastParticiple": "written",
+    "definition": "写",
+    "ipa": "/raɪt/"
+  }
+]

@@ -1,0 +1,256 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #1a1a2e;
+  --accent-color: #e6e6fa;
+  --background-color: #ffffff;
+  --surface-color: #f8f9fa;
+  --text-color: #1a1a2e;
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --correct-color: #10b981;
+  --incorrect-color: #ef4444;
+}
+
+.dark-mode {
+  --primary-color: #1a1a2e;
+  --secondary-color: #ffffff;
+  --accent-color: #2d3748;
+  --background-color: #1a1a2e;
+  --surface-color: #2d3748;
+  --text-color: #ffffff;
+  --border-color: #4a5568;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+
+  /* 这两个颜色暗一些 */
+  /* --correct-color: rgba(16, 185, 129, 0.5);
+  --incorrect-color: rgba(239, 68, 68, 0.5); */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--secondary-color);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.word-display {
+  /* background-color: var(--accent-color); */
+  padding: 10px;
+  /* padding-bottom: 5px; */
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  /* margin-bottom: 25px; */
+}
+
+.ipa-display {
+  /* margin-bottom: 10px; */
+  text-align: center;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+.definition {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--surface-color);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  font-size: 1.3em;
+  transition: border-color 0.3s ease;
+
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--border-color);
+}
+
+#pastInput {
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#submitBtn {
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+input.correct {
+  /* 在input里面的右侧添加一个绿色小箭头 */
+  background-image: url('https://img.icons8.com/fluency/48/000000/checkmark.png');
+  background-repeat: no-repeat;
+  /* 再往左一点点 */
+  background-position: right 10px center;
+  background-size: 20px;
+  background-color: #d5f5e3;
+
+  color: var(--correct-color);
+  border-color: #d5f5e3;
+}
+
+input.correct:focus {
+  border-color: var(--correct-color);
+}
+
+.incorrect {
+  background-color: rgba(255, 176, 169, 0.82);
+  color: var(--incorrect-color);
+}
+
+input.incorrect {
+  background-image: url('https://img.icons8.com/fluency/48/000000/delete-sign.png');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+
+  border-color: #fadbd8;
+}
+
+input.incorrect:focus {
+  border-color: var(--incorrect-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.result {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#themeToggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  font-size: 2em;
+
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    align-items: baseline;
+    padding: 15px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .word-display {
+    font-size: 1.6rem;
+  }
+
+  .definition {
+    font-size: 0.9em;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .navigation-buttons {
+    gap: 10px;
+  }
+}

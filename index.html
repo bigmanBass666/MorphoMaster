@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>单词拼写练习</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark-mode">
+    <!-- <body> -->
+    <div class="container">
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="word-display" id="currentWord">...</div>
+
+      <div class="ipa-display" id="wordIPA">...</div>
+
+      <div class="definition" id="wordDefinition">...</div>
+
+      <div id="pluralInputGroup" class="input-group">
+        <label for="pluralInput">复数形式：</label>
+        <input type="text" id="pluralInput" />
+      </div>
+
+      <div id="verbInputs" class="input-group hidden">
+        <label for="pastInput">过去式：</label>
+        <input type="text" id="pastInput" />
+
+        <label for="pastParticipleInput">过去分词：</label>
+        <input type="text" id="pastParticipleInput" />
+      </div>
+
+      <button onclick="checkAnswers()" id="submitBtn">提交</button>
+
+      <div class="navigation-buttons">
+        <button onclick="previousWord()">上一个</button>
+        <button onclick="nextWord()">下一个</button>
+      </div>
+
+      <div id="result" class="result hidden"></div>
+    </div>
+
+    <!-- Add this button outside the container -->
+    <div id="themeToggle">&#9788;</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="index.js"></script>
+    <!-- <script src="js/confetti.js"></script> -->
+  </body>
+</html>
