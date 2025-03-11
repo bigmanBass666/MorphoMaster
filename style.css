@@ -206,9 +206,9 @@ input.incorrect:focus {
 }
 
 #themeToggle {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
 
   display: flex;
   justify-content: center;
