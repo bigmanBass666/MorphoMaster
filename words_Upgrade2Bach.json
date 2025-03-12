@@ -263,6 +263,22 @@
   },
   {
     "type": "verb",
+    "original": "spend",
+    "past": "spent",
+    "pastParticiple": "spent",
+    "definition": "花费",
+    "ipa": "/spend/"
+  },
+  {
+    "type": "verb",
+    "original": "stand",
+    "past": "stood",
+    "pastParticiple": "stood",
+    "definition": "站立",
+    "ipa": "/stænd/"
+  },
+  {
+    "type": "verb",
     "original": "steal",
     "past": "stole",
     "pastParticiple": "stolen",
