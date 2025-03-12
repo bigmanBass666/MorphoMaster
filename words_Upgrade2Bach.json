@@ -1,19 +1,110 @@
 [
-  { "type": "noun", "original": "man", "plural": "men", "definition": "男人", "ipa": "/mæn/" },
-  { "type": "noun", "original": "woman", "plural": "women", "definition": "女人", "ipa": "/ˈwʊmən/" },
-  { "type": "noun", "original": "child", "plural": "children", "definition": "孩子", "ipa": "/tʃaɪld/" },
-  { "type": "noun", "original": "tooth", "plural": "teeth", "definition": "牙齿", "ipa": "/tʊθ/" },
-  { "type": "noun", "original": "foot", "plural": "feet", "definition": "脚", "ipa": "/fʊt/" },
-  { "type": "noun", "original": "mouse", "plural": "mice", "definition": "老鼠", "ipa": "/maʊs/" },
-  { "type": "noun", "original": "focus", "plural": "foci", "definition": "焦点", "ipa": "/ˈfəʊkəs/" },
-  { "type": "noun", "original": "criterion", "plural": "criteria", "definition": "标准", "ipa": "/kraɪˈtɪəriən/" },
-  { "type": "noun", "original": "phenomenon", "plural": "phenomena", "definition": "现象", "ipa": "/fɪˈnɒmənɒn/" },
-  { "type": "noun", "original": "analysis", "plural": "analyses", "definition": "分析", "ipa": "/əˈnælɪsɪs/" },
-  { "type": "noun", "original": "crisis", "plural": "crises", "definition": "危机", "ipa": "/ˈkraɪsɪs/" },
-  { "type": "noun", "original": "basis", "plural": "bases", "definition": "基础", "ipa": "/ˈbeɪsɪs/" },
-  { "type": "noun", "original": "diagnosis", "plural": "diagnoses", "definition": "诊断", "ipa": "/daɪəgˈnəʊsɪs/" },
-  { "type": "noun", "original": "medium", "plural": "media", "definition": "媒体", "ipa": "/ˈmiːdiəm/" },
-  { "type": "verb", "original": "eat", "past": "ate", "pastParticiple": "eaten", "definition": "吃", "ipa": "/iːt/" },
+  {
+    "type": "noun",
+    "original": "man",
+    "plural": "men",
+    "definition": "男人",
+    "ipa": "/mæn/"
+  },
+  {
+    "type": "noun",
+    "original": "woman",
+    "plural": "women",
+    "definition": "女人",
+    "ipa": "/ˈwʊmən/"
+  },
+  {
+    "type": "noun",
+    "original": "child",
+    "plural": "children",
+    "definition": "孩子",
+    "ipa": "/tʃaɪld/"
+  },
+  {
+    "type": "noun",
+    "original": "tooth",
+    "plural": "teeth",
+    "definition": "牙齿",
+    "ipa": "/tʊθ/"
+  },
+  {
+    "type": "noun",
+    "original": "foot",
+    "plural": "feet",
+    "definition": "脚",
+    "ipa": "/fʊt/"
+  },
+  {
+    "type": "noun",
+    "original": "mouse",
+    "plural": "mice",
+    "definition": "老鼠",
+    "ipa": "/maʊs/"
+  },
+  {
+    "type": "noun",
+    "original": "focus",
+    "plural": "foci",
+    "definition": "焦点",
+    "ipa": "/ˈfəʊkəs/"
+  },
+  {
+    "type": "noun",
+    "original": "criterion",
+    "plural": "criteria",
+    "definition": "标准",
+    "ipa": "/kraɪˈtɪəriən/"
+  },
+  {
+    "type": "noun",
+    "original": "phenomenon",
+    "plural": "phenomena",
+    "definition": "现象",
+    "ipa": "/fɪˈnɒmənɒn/"
+  },
+  {
+    "type": "noun",
+    "original": "analysis",
+    "plural": "analyses",
+    "definition": "分析",
+    "ipa": "/əˈnælɪsɪs/"
+  },
+  {
+    "type": "noun",
+    "original": "crisis",
+    "plural": "crises",
+    "definition": "危机",
+    "ipa": "/ˈkraɪsɪs/"
+  },
+  {
+    "type": "noun",
+    "original": "basis",
+    "plural": "bases",
+    "definition": "基础",
+    "ipa": "/ˈbeɪsɪs/"
+  },
+  {
+    "type": "noun",
+    "original": "diagnosis",
+    "plural": "diagnoses",
+    "definition": "诊断",
+    "ipa": "/daɪəgˈnəʊsɪs/"
+  },
+  {
+    "type": "noun",
+    "original": "medium",
+    "plural": "media",
+    "definition": "媒体",
+    "ipa": "/ˈmiːdiəm/"
+  },
+  {
+    "type": "verb",
+    "original": "eat",
+    "past": "ate",
+    "pastParticiple": "eaten",
+    "definition": "吃",
+    "ipa": "/iːt/"
+  },
   {
     "type": "verb",
     "original": "become",
@@ -126,7 +217,14 @@
     "definition": "喝",
     "ipa": "/drɪŋk/"
   },
-  { "type": "verb", "original": "fly", "past": "flew", "pastParticiple": "flown", "definition": "飞", "ipa": "/flaɪ/" },
+  {
+    "type": "verb",
+    "original": "fly",
+    "past": "flew",
+    "pastParticiple": "flown",
+    "definition": "飞",
+    "ipa": "/flaɪ/"
+  },
   {
     "type": "verb",
     "original": "fight",
@@ -151,9 +249,30 @@
     "definition": "冻结",
     "ipa": "/friːz/"
   },
-  { "type": "verb", "original": "get", "past": "got", "pastParticiple": "got", "definition": "得到", "ipa": "/ɡet/" },
-  { "type": "verb", "original": "give", "past": "gave", "pastParticiple": "given", "definition": "给", "ipa": "/ɡɪv/" },
-  { "type": "verb", "original": "go", "past": "went", "pastParticiple": "gone", "definition": "去", "ipa": "/ɡəʊ/" },
+  {
+    "type": "verb",
+    "original": "get",
+    "past": "got",
+    "pastParticiple": "got",
+    "definition": "得到",
+    "ipa": "/ɡet/"
+  },
+  {
+    "type": "verb",
+    "original": "give",
+    "past": "gave",
+    "pastParticiple": "given",
+    "definition": "给",
+    "ipa": "/ɡɪv/"
+  },
+  {
+    "type": "verb",
+    "original": "go",
+    "past": "went",
+    "pastParticiple": "gone",
+    "definition": "去",
+    "ipa": "/ɡəʊ/"
+  },
   {
     "type": "verb",
     "original": "grow",
@@ -170,7 +289,14 @@
     "definition": "悬挂",
     "ipa": "/hæŋ/"
   },
-  { "type": "verb", "original": "have", "past": "had", "pastParticiple": "had", "definition": "有", "ipa": "/hæv/" },
+  {
+    "type": "verb",
+    "original": "have",
+    "past": "had",
+    "pastParticiple": "had",
+    "definition": "有",
+    "ipa": "/hæv/"
+  },
   {
     "type": "verb",
     "original": "hear",
@@ -195,8 +321,22 @@
     "definition": "知道",
     "ipa": "/nəʊ/"
   },
-  { "type": "verb", "original": "lay", "past": "laid", "pastParticiple": "laid", "definition": "放置", "ipa": "/leɪ/" },
-  { "type": "verb", "original": "lead", "past": "led", "pastParticiple": "led", "definition": "领导", "ipa": "/liːd/" },
+  {
+    "type": "verb",
+    "original": "lay",
+    "past": "laid",
+    "pastParticiple": "laid",
+    "definition": "放置",
+    "ipa": "/leɪ/"
+  },
+  {
+    "type": "verb",
+    "original": "lead",
+    "past": "led",
+    "pastParticiple": "led",
+    "definition": "领导",
+    "ipa": "/liːd/"
+  },
   {
     "type": "verb",
     "original": "learn",
@@ -213,8 +353,22 @@
     "definition": "制作",
     "ipa": "/meɪk/"
   },
-  { "type": "verb", "original": "meet", "past": "met", "pastParticiple": "met", "definition": "见面", "ipa": "/miːt/" },
-  { "type": "verb", "original": "pay", "past": "paid", "pastParticiple": "paid", "definition": "支付", "ipa": "/peɪ/" },
+  {
+    "type": "verb",
+    "original": "meet",
+    "past": "met",
+    "pastParticiple": "met",
+    "definition": "见面",
+    "ipa": "/miːt/"
+  },
+  {
+    "type": "verb",
+    "original": "pay",
+    "past": "paid",
+    "pastParticiple": "paid",
+    "definition": "支付",
+    "ipa": "/peɪ/"
+  },
   {
     "type": "verb",
     "original": "ring",
@@ -231,11 +385,46 @@
     "definition": "升起",
     "ipa": "/raɪz/"
   },
-  { "type": "verb", "original": "run", "past": "ran", "pastParticiple": "run", "definition": "跑", "ipa": "/rʌn/" },
-  { "type": "verb", "original": "see", "past": "saw", "pastParticiple": "seen", "definition": "看见", "ipa": "/siː/" },
-  { "type": "verb", "original": "say", "past": "said", "pastParticiple": "said", "definition": "说", "ipa": "/seɪ/" },
-  { "type": "verb", "original": "sing", "past": "sang", "pastParticiple": "sung", "definition": "唱", "ipa": "/sɪŋ/" },
-  { "type": "verb", "original": "sit", "past": "sat", "pastParticiple": "sat", "definition": "坐", "ipa": "/sɪt/" },
+  {
+    "type": "verb",
+    "original": "run",
+    "past": "ran",
+    "pastParticiple": "run",
+    "definition": "跑",
+    "ipa": "/rʌn/"
+  },
+  {
+    "type": "verb",
+    "original": "see",
+    "past": "saw",
+    "pastParticiple": "seen",
+    "definition": "看见",
+    "ipa": "/siː/"
+  },
+  {
+    "type": "verb",
+    "original": "say",
+    "past": "said",
+    "pastParticiple": "said",
+    "definition": "说",
+    "ipa": "/seɪ/"
+  },
+  {
+    "type": "verb",
+    "original": "sing",
+    "past": "sang",
+    "pastParticiple": "sung",
+    "definition": "唱",
+    "ipa": "/sɪŋ/"
+  },
+  {
+    "type": "verb",
+    "original": "sit",
+    "past": "sat",
+    "pastParticiple": "sat",
+    "definition": "坐",
+    "ipa": "/sɪt/"
+  },
   {
     "type": "verb",
     "original": "sleep",
@@ -244,7 +433,14 @@
     "definition": "睡觉",
     "ipa": "/sliːp/"
   },
-  { "type": "verb", "original": "sell", "past": "sold", "pastParticiple": "sold", "definition": "卖", "ipa": "/sel/" },
+  {
+    "type": "verb",
+    "original": "sell",
+    "past": "sold",
+    "pastParticiple": "sold",
+    "definition": "卖",
+    "ipa": "/sel/"
+  },
   {
     "type": "verb",
     "original": "send",

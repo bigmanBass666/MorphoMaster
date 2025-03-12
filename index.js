@@ -25,7 +25,8 @@ function loadProgress() {
   if (savedProgress !== null) {
     const progressData = JSON.parse(savedProgress)
     currentWordIndex = progressData.currentIndex
-    document.getElementById('progress').style.width = progressData.progressBarWidth + '%'
+    document.getElementById('progress').style.width =
+      progressData.progressBarWidth + '%'
   }
 }
 
@@ -60,7 +61,9 @@ const pastParticipleInput = document.getElementById('pastParticipleInput')
 function updateCurrentWord() {
   const currentWord = words[currentWordIndex]
   document.getElementById('currentWord').textContent = `${currentWord.original}`
-  document.getElementById('wordDefinition').textContent = `${currentWord.definition}`
+  document.getElementById(
+    'wordDefinition'
+  ).textContent = `${currentWord.definition}`
   document.getElementById('wordIPA').textContent = `${currentWord.ipa || ''}`
   document.getElementById('result').className = 'result hidden'
 
@@ -119,7 +122,9 @@ function checkAnswers() {
     isCorrect = false
 
     const pastInputStr = pastInput.value.toLowerCase().trim()
-    const pastParticipleInputStr = pastParticipleInput.value.toLowerCase().trim()
+    const pastParticipleInputStr = pastParticipleInput.value
+      .toLowerCase()
+      .trim()
 
     let isPastInputCorrect = false
     let isPastParticipleInputCorrect = false
@@ -251,23 +256,29 @@ function toggleConfetti() {
 }
 
 // 回车提交答案
-document.getElementById('pluralInput').addEventListener('keydown', function (event) {
-  if (event.key === 'Enter') {
-    checkAnswers()
-  }
-})
+document
+  .getElementById('pluralInput')
+  .addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      checkAnswers()
+    }
+  })
 
-document.getElementById('pastInput').addEventListener('keydown', function (event) {
-  if (event.key === 'Enter') {
-    checkAnswers()
-  }
-})
+document
+  .getElementById('pastInput')
+  .addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      checkAnswers()
+    }
+  })
 
-document.getElementById('pastParticipleInput').addEventListener('keydown', function (event) {
-  if (event.key === 'Enter') {
-    checkAnswers()
-  }
-})
+document
+  .getElementById('pastParticipleInput')
+  .addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      checkAnswers()
+    }
+  })
 
 // 添加快捷键支持, alt+h, alt+l
 document.addEventListener('keydown', function (event) {
@@ -284,14 +295,13 @@ document.getElementById('themeToggle').addEventListener('click', function () {
   if (document.body.classList.contains('dark-mode')) {
     // 太阳
     document.getElementById('themeToggle').innerHTML = '&#9788;'
-    localStorage.setItem('theme', 'dark');
+    localStorage.setItem('theme', 'dark')
   } else {
     // 月亮
     document.getElementById('themeToggle').innerHTML = '&#9790;'
-    localStorage.setItem('theme', 'light');
+    localStorage.setItem('theme', 'light')
   }
 })
-
 
 // 给themeToggle添加快捷键: alt+t, 点击themeToggle切换主题
 document.addEventListener('keydown', function (event) {

@@ -229,6 +229,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  font-size: .9em;
   color: var(--text-color);
 }
 
