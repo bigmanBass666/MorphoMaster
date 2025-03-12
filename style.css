@@ -30,6 +30,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all .3s;
+
+  color: var(--text-color);
 }
 
 *::selection {
@@ -70,25 +73,20 @@ body {
   height: 100%;
   background-color: var(--secondary-color);
   width: 0%;
-  transition: width 0.3s ease;
 }
 
 .word-display {
-  /* background-color: var(--accent-color); */
   padding: 10px;
-  /* padding-bottom: 5px; */
   text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
   color: var(--text-color);
-  /* margin-bottom: 25px; */
 }
 
 .ipa-display {
-  /* margin-bottom: 10px; */
   text-align: center;
   font-style: italic;
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .definition {
@@ -96,6 +94,7 @@ body {
   padding: 10px;
   background-color: var(--surface-color);
   text-align: center;
+  color: var(--text-color);
   font-size: 1.2em;
 }
 
@@ -116,7 +115,6 @@ input {
   border: 2px solid var(--primary-color);
   border-radius: 6px;
   font-size: 1.3em;
-  transition: border-color 0.3s ease;
 
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -131,38 +129,19 @@ input:focus {
   margin-bottom: 8px;
 }
 
-button {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  border: none;
-  padding: 12px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-#submitBtn {
-  margin-bottom: 10px;
-}
-
-button:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-
 input.correct {
   /* 在input里面的右侧添加一个绿色小箭头 */
   background-image: url('https://img.icons8.com/fluency/48/000000/checkmark.png');
   background-repeat: no-repeat;
   /* 再往左一点点 */
-  background-position: right 10px center;
+  background-position: right 12px center;
   background-size: 20px;
   background-color: #d5f5e3;
 
   color: var(--correct-color);
   border-color: #d5f5e3;
+
+  transition: background-position 0s;
 }
 
 input.correct:focus {
@@ -177,14 +156,36 @@ input.correct:focus {
 input.incorrect {
   background-image: url('https://img.icons8.com/fluency/48/000000/delete-sign.png');
   background-repeat: no-repeat;
-  background-position: right 10px center;
+  background-position: right 12px center;
   background-size: 20px;
 
   border-color: #fadbd8;
+
+  transition: background-position 0s;
 }
 
 input.incorrect:focus {
   border-color: var(--incorrect-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#submitBtn {
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .hidden {
@@ -207,8 +208,8 @@ input.incorrect:focus {
 
 #themeToggle {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  bottom: 10px;
+  right: 10px;
 
   display: flex;
   justify-content: center;
@@ -224,7 +225,7 @@ input.incorrect:focus {
 
 footer {
   position: fixed;
-  bottom: 10px;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -259,7 +260,7 @@ footer a:hover {
   }
 
   input {
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 1em;
   }
 

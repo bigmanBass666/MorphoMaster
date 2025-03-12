@@ -1,3 +1,21 @@
+function loadTheme() {
+  const savedTheme = localStorage.getItem('theme')
+  if (savedTheme) {
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode')
+      document.getElementById('themeToggle').innerHTML = '&#9788;'
+    } else {
+      document.body.classList.remove('dark-mode')
+      document.getElementById('themeToggle').innerHTML = '&#9790;'
+    }
+  }
+}
+
+// Call loadTheme at the start of the script
+loadTheme()
+
+// -------------------------------------------------------------
+
 let words = []
 let currentWordIndex = 0
 
@@ -205,7 +223,7 @@ function nextWord() {
 }
 
 function toggleConfetti() {
-  let end = Date.now() + 4 * 1000
+  let end = Date.now() + 10 * 1000
 
   // go Buckeyes!
   let colors = ['#bb0000', '#ffffff']
@@ -266,8 +284,18 @@ document.getElementById('themeToggle').addEventListener('click', function () {
   if (document.body.classList.contains('dark-mode')) {
     // 太阳
     document.getElementById('themeToggle').innerHTML = '&#9788;'
+    localStorage.setItem('theme', 'dark');
   } else {
     // 月亮
     document.getElementById('themeToggle').innerHTML = '&#9790;'
+    localStorage.setItem('theme', 'light');
+  }
+})
+
+
+// 给themeToggle添加快捷键: alt+t, 点击themeToggle切换主题
+document.addEventListener('keydown', function (event) {
+  if (event.altKey && event.key === 't') {
+    document.getElementById('themeToggle').click()
   }
 })
