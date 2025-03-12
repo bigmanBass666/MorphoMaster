@@ -1,311 +1,280 @@
-function loadTheme() {
-  const savedTheme = localStorage.getItem('theme')
-  if (savedTheme) {
-    if (savedTheme === 'dark') {
-      document.body.classList.add('dark-mode')
-      document.getElementById('themeToggle').innerHTML = '&#9788;'
+;(function () {
+  'use strict'
+
+  // 封装状态管理
+  const state = {
+    words: [],
+    currentWordIndex: 0,
+    elements: {
+      progressBar: document.querySelector('#progress'),
+      currentWord: document.querySelector('#currentWord'),
+      wordDefinition: document.querySelector('#wordDefinition'),
+      wordIPA: document.querySelector('#wordIPA'),
+      pluralInputGroup: document.querySelector('#pluralInputGroup'),
+      verbInputs: document.querySelector('#verbInputs'),
+      pluralInput: document.querySelector('#pluralInput'),
+      pastInput: document.querySelector('#pastInput'),
+      pastParticipleInput: document.querySelector('#pastParticipleInput'),
+      submitBtn: document.querySelector('#submitBtn'),
+      previousBtn: document.querySelector('#previousBtn'),
+      nextBtn: document.querySelector('#nextBtn'),
+      result: document.querySelector('#result'),
+      themeToggle: document.querySelector('#themeToggle'),
+    },
+  }
+
+  // 主题管理
+  function initTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'light'
+    document.body.classList.toggle('dark-mode', savedTheme === 'dark')
+    state.elements.themeToggle.innerHTML =
+      savedTheme === 'dark' ? '&#9788;' : '&#9790;'
+  }
+
+  // 进度管理
+  const progressManager = {
+    load() {
+      const saved = localStorage.getItem('progress')
+      if (!saved) return
+      const { currentIndex, progressBarWidth } = JSON.parse(saved)
+      state.currentWordIndex = currentIndex
+      state.elements.progressBar.style.width = `${progressBarWidth}%`
+    },
+    save() {
+      const progress = (state.currentWordIndex / state.words.length) * 100
+      localStorage.setItem(
+        'progress',
+        JSON.stringify({
+          currentIndex: state.currentWordIndex,
+          progressBarWidth: progress,
+        })
+      )
+    },
+  }
+
+  // 输入框管理
+  const inputManager = {
+    clearStyles(...inputs) {
+      inputs.forEach((input) => {
+        input.classList.remove('correct', 'incorrect')
+        input.value = ''
+      })
+    },
+    setupEnterHandler(...inputs) {
+      inputs.forEach((input) => {
+        input.addEventListener(
+          'keydown',
+          (e) => e.key === 'Enter' && checkAnswers()
+        )
+      })
+    },
+  }
+
+  // 单词操作
+  function updateCurrentWord() {
+    const { currentWord } = getCurrentWord()
+    const { elements } = state
+
+    elements.currentWord.textContent = currentWord.original
+    elements.wordDefinition.textContent = currentWord.definition
+    elements.wordIPA.textContent = currentWord.ipa || ''
+    elements.result.classList.add('hidden')
+
+    const isNoun = currentWord.type === 'noun'
+    elements.pluralInputGroup.classList.toggle('hidden', !isNoun)
+    elements.verbInputs.classList.toggle('hidden', isNoun)
+
+    if (isNoun) {
+      inputManager.clearStyles(elements.pluralInput)
+      elements.pluralInput.focus()
     } else {
-      document.body.classList.remove('dark-mode')
-      document.getElementById('themeToggle').innerHTML = '&#9790;'
+      inputManager.clearStyles(elements.pastInput, elements.pastParticipleInput)
+      elements.pastInput.focus()
     }
   }
-}
 
-// Call loadTheme at the start of the script
-loadTheme()
-
-// -------------------------------------------------------------
-
-let words = []
-let currentWordIndex = 0
-
-// 从 localStorage 加载进度
-function loadProgress() {
-  const savedProgress = localStorage.getItem('progress')
-  if (savedProgress !== null) {
-    const progressData = JSON.parse(savedProgress)
-    currentWordIndex = progressData.currentIndex
-    document.getElementById('progress').style.width =
-      progressData.progressBarWidth + '%'
-  }
-}
-
-// 保存进度到 localStorage
-function saveProgress() {
-  const progress = (currentWordIndex / words.length) * 100
-  localStorage.setItem(
-    'progress',
-    JSON.stringify({
-      currentIndex: currentWordIndex,
-      progressBarWidth: progress,
-    })
-  )
-}
-
-// 加载单词数据
-fetch('words_Upgrade2Bach.json')
-  .then((response) => response.json())
-  .then((data) => {
-    words = data
-    loadProgress() // 加载进度
-    updateCurrentWord()
-  })
-  .catch((error) => {
-    console.error('加载单词数据时出错:', error)
-  })
-
-const pluralInput = document.getElementById('pluralInput')
-const pastInput = document.getElementById('pastInput')
-const pastParticipleInput = document.getElementById('pastParticipleInput')
-
-function updateCurrentWord() {
-  const currentWord = words[currentWordIndex]
-  document.getElementById('currentWord').textContent = `${currentWord.original}`
-  document.getElementById(
-    'wordDefinition'
-  ).textContent = `${currentWord.definition}`
-  document.getElementById('wordIPA').textContent = `${currentWord.ipa || ''}`
-  document.getElementById('result').className = 'result hidden'
-
-  const pluralInputGroup = document.getElementById('pluralInputGroup')
-  const verbInputs = document.getElementById('verbInputs')
-
-  // 根据单词类型显示/隐藏输入框
-  if (currentWord.type === 'noun') {
-    // 移除pluralInput的correct, incorrect类
-    clearCorrectIncorrect(pluralInput)
-
-    // 清除pluralInput的value
-    pluralInput.value = ''
-
-    pluralInputGroup.classList.remove('hidden')
-    verbInputs.classList.add('hidden')
-  } else {
-    // 移除pastInput和pastParticipleInput的correct, incorrect类
-    clearCorrectIncorrect(pastInput)
-    clearCorrectIncorrect(pastParticipleInput)
-
-    // 清除2个input的value
-    pastInput.value = ''
-    pastParticipleInput.value = ''
-
-    pluralInputGroup.classList.add('hidden')
-    verbInputs.classList.remove('hidden')
-
-    // 聚焦pastInput
-    pastInput.focus()
-  }
-
-  // 清除correct, incorrect类
-  function clearCorrectIncorrect(input) {
-    input.classList.remove('correct')
-    input.classList.remove('incorrect')
-  }
-}
-
-function checkAnswers() {
-  const currentWord = words[currentWordIndex]
-  let isCorrect = false
-  let resultText = ''
-
-  if (currentWord.type === 'noun') {
-    const pluralInputStr = pluralInput.value.toLowerCase().trim()
-
-    if (pluralInputStr === currentWord.plural) {
-      isCorrect = true
-    } else {
-      incorrect(pluralInput)
-      pluralInput.select()
-      resultText = `${currentWord.plural}`
+  function getCurrentWord() {
+    return {
+      currentWord: state.words[state.currentWordIndex],
+      total: state.words.length,
     }
-  } else {
-    isCorrect = false
+  }
 
-    const pastInputStr = pastInput.value.toLowerCase().trim()
-    const pastParticipleInputStr = pastParticipleInput.value
+  // 答案验证
+  function validateNoun(currentWord) {
+    const input = state.elements.pluralInput.value.toLowerCase().trim()
+    if (input !== currentWord.plural) {
+      state.elements.result.innerHTML = currentWord.plural
+      state.elements.pluralInput.classList.add('incorrect')
+      return false
+    }
+    return true
+  }
+
+  function validateVerb(currentWord) {
+    const past = state.elements.pastInput.value.toLowerCase().trim()
+    const participle = state.elements.pastParticipleInput.value
       .toLowerCase()
       .trim()
+    let result = ''
 
-    let isPastInputCorrect = false
-    let isPastParticipleInputCorrect = false
+    ;[past, participle].forEach((val, i) => {
+      const correctVal = i ? currentWord.pastParticiple : currentWord.past
+      const element = i
+        ? state.elements.pastParticipleInput
+        : state.elements.pastInput
+      if (val !== correctVal) {
+        result += `${correctVal}<br>`
+        element.classList.add('incorrect')
+        element.select()
+      } else {
+        element.classList.add('correct')
+      }
+    })
 
-    if (pastInputStr === currentWord.past) {
-      isPastInputCorrect = true
+    state.elements.result.innerHTML = result
+    return result === ''
+  }
+
+  function checkAnswers() {
+    const { currentWord } = getCurrentWord()
+    let isCorrect = false
+
+    if (currentWord.type === 'noun') {
+      isCorrect = validateNoun(currentWord)
     } else {
-      resultText += `${currentWord.past}<br>`
+      isCorrect = validateVerb(currentWord)
     }
 
-    if (pastParticipleInputStr === currentWord.pastParticiple) {
-      isPastParticipleInputCorrect = true
-    } else {
-      resultText += `${currentWord.pastParticiple}<br>`
-    }
+    handleAnswerResult(isCorrect)
+  }
 
-    if (isPastInputCorrect && !isPastParticipleInputCorrect) {
-      // 标红标绿
-      correct(pastInput)
-      incorrect(pastParticipleInput)
+  function updateProgress() {
+    const progress = (state.currentWordIndex / state.words.length) * 100
+    document.getElementById('progress').style.width = `${progress}%`
+  }
 
-      // 选中错误输入
-      pastParticipleInput.select()
-    } else if (isPastParticipleInputCorrect && !isPastInputCorrect) {
-      correct(pastParticipleInput)
-      incorrect(pastInput)
-
-      // 选中错误输入
-      pastInput.select()
-    } else if (!isPastInputCorrect && !isPastParticipleInputCorrect) {
-      incorrect(pastInput)
-      incorrect(pastParticipleInput)
-
-      // 两个都答错, 则选中第一个input文本
-      pastInput.select()
-    } else {
-      isCorrect = true
-      // 不规则动词答对清空
-      pastInput.value = ''
-      pastParticipleInput.value = ''
+  function previousWord() {
+    if (state.currentWordIndex > 0) {
+      state.currentWordIndex--
+      updateCurrentWord()
+      updateProgress()
+      progressManager.save()
     }
   }
 
-  const resultDiv = document.getElementById('result')
-  resultDiv.className = isCorrect ? 'result correct' : 'result incorrect'
-  resultDiv.innerHTML = resultText
-  resultDiv.classList.remove('hidden')
+  function nextWord() {
+    if (state.currentWordIndex < state.words.length - 1) {
+      state.currentWordIndex++
+      updateCurrentWord()
+      updateProgress()
+      progressManager.save()
+    }
+  }
 
-  if (isCorrect) {
-    currentWordIndex++
-    saveProgress() // 保存进度
-    if (currentWordIndex < words.length) {
+  function handleAnswerResult(isCorrect) {
+    const { result } = state.elements
+    result.className = `result ${isCorrect ? 'correct' : 'incorrect'}`
+    result.classList.remove('hidden')
+
+    if (!isCorrect) return
+
+    state.currentWordIndex++
+    progressManager.save()
+
+    if (state.currentWordIndex < state.words.length) {
       updateProgress()
       updateCurrentWord()
     } else {
-      // 放烟花
       toggleConfetti()
-
-      // 单词索引归零, 从头开始
-      currentWordIndex = 0
-      localStorage.removeItem('progress') // 清除进度
+      state.currentWordIndex = 0
+      localStorage.removeItem('progress')
       updateProgress()
       updateCurrentWord()
-
-      // alert('🎉🎉恭喜你，所有单词都已完成！🎉🎉')
     }
   }
 
-  // 加答对的类, 并移除答错的类
-  function correct(input) {
-    input.classList.add('correct')
-    input.classList.remove('incorrect')
-  }
-
-  // 加答错的类, 并移除答对的类
-  function incorrect(input) {
-    input.classList.add('incorrect')
-    input.classList.remove('correct')
-  }
-}
-
-function updateProgress() {
-  const progress = (currentWordIndex / words.length) * 100
-  document.getElementById('progress').style.width = `${progress}%`
-}
-
-function previousWord() {
-  if (currentWordIndex > 0) {
-    currentWordIndex--
-    updateCurrentWord()
-    updateProgress()
-  }
-}
-
-function nextWord() {
-  if (currentWordIndex < words.length - 1) {
-    currentWordIndex++
-    updateCurrentWord()
-    updateProgress()
-  }
-}
-
-function toggleConfetti() {
-  let end = Date.now() + 10 * 1000
-
-  // go Buckeyes!
-  let colors = ['#bb0000', '#ffffff']
-
-  ;(function frame() {
-    confetti({
-      particleCount: 2,
-      angle: 60,
-      spread: 55,
-      origin: { x: 0 },
-      colors: colors,
+  // 其他函数保持类似结构，略作整理...
+  // 初始化
+  fetch('words_Upgrade2Bach.json')
+    .then((res) => res.json())
+    .then((data) => {
+      state.words = data
+      progressManager.load()
+      updateCurrentWord()
     })
-    confetti({
-      particleCount: 2,
-      angle: 120,
-      spread: 55,
-      origin: { x: 1 },
-      colors: colors,
-    })
+    .catch(console.error)
 
-    if (Date.now() < end) {
-      requestAnimationFrame(frame)
-    }
-  })()
-}
-
-// 回车提交答案
-document
-  .getElementById('pluralInput')
-  .addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-      checkAnswers()
-    }
-  })
-
-document
-  .getElementById('pastInput')
-  .addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-      checkAnswers()
+  // 事件监听
+  document.addEventListener('keydown', (e) => {
+    if (e.altKey) {
+      switch (e.key) {
+        case 'h':
+          previousWord()
+          break
+        case 'l':
+          nextWord()
+          break
+        case 'c':
+          toggleConfetti()
+          break
+        case 't':
+          toggleTheme()
+          break
+      }
     }
   })
 
-document
-  .getElementById('pastParticipleInput')
-  .addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-      checkAnswers()
-    }
+  // click themeToggle
+  function toggleTheme() {
+    state.elements.themeToggle.click()
+  }
+
+  state.elements.themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode')
+    const isDark = document.body.classList.contains('dark-mode')
+    localStorage.setItem('theme', isDark ? 'dark' : 'light')
+    state.elements.themeToggle.innerHTML = isDark ? '&#9788;' : '&#9790;'
   })
 
-// 添加快捷键支持, alt+h, alt+l
-document.addEventListener('keydown', function (event) {
-  if (event.altKey && event.key === 'h') {
-    previousWord()
-  } else if (event.altKey && event.key === 'l') {
-    nextWord()
-  }
-})
+  inputManager.setupEnterHandler(
+    state.elements.pluralInput,
+    state.elements.pastInput,
+    state.elements.pastParticipleInput
+  )
 
-document.getElementById('themeToggle').addEventListener('click', function () {
-  document.body.classList.toggle('dark-mode')
+  // submitBtn, previousBtn, nextBtn的点击事件监听器
+  state.elements.submitBtn.addEventListener('click', checkAnswers)
+  state.elements.previousBtn.addEventListener('click', previousWord)
+  state.elements.nextBtn.addEventListener('click', nextWord)
 
-  if (document.body.classList.contains('dark-mode')) {
-    // 太阳
-    document.getElementById('themeToggle').innerHTML = '&#9788;'
-    localStorage.setItem('theme', 'dark')
-  } else {
-    // 月亮
-    document.getElementById('themeToggle').innerHTML = '&#9790;'
-    localStorage.setItem('theme', 'light')
-  }
-})
+  function toggleConfetti() {
+    let end = Date.now() + 10 * 1000
 
-// 给themeToggle添加快捷键: alt+t, 点击themeToggle切换主题
-document.addEventListener('keydown', function (event) {
-  if (event.altKey && event.key === 't') {
-    document.getElementById('themeToggle').click()
+    // go Buckeyes!
+    let colors = ['#bb0000', '#ffffff']
+
+    ;(function frame() {
+      confetti({
+        particleCount: 3,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 },
+        colors: colors,
+      })
+      confetti({
+        particleCount: 2,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 },
+        colors: colors,
+      })
+
+      if (Date.now() < end) {
+        requestAnimationFrame(frame)
+      }
+    })()
   }
-})
+
+  initTheme()
+})()

@@ -20,17 +20,13 @@
   --text-color: #ffffff;
   --border-color: #4a5568;
   --shadow-color: rgba(0, 0, 0, 0.3);
-
-  /* 这两个颜色暗一些 */
-  /* --correct-color: rgba(16, 185, 129, 0.5);
-  --incorrect-color: rgba(239, 68, 68, 0.5); */
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all .3s;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s ease-in-out;
 
   color: var(--text-color);
 }
@@ -41,9 +37,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--background-color);
-  color: var(--text-color);
   margin: 0;
   padding: 20px;
   display: flex;
@@ -73,6 +68,8 @@ body {
   height: 100%;
   background-color: var(--secondary-color);
   width: 0%;
+  transition: width .2s;
+  border-radius: 4px;
 }
 
 .word-display {
@@ -80,21 +77,18 @@ body {
   text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
-  color: var(--text-color);
 }
 
 .ipa-display {
   text-align: center;
   font-style: italic;
-  color: var(--text-color);
 }
 
 .definition {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   padding: 10px;
   background-color: var(--surface-color);
   text-align: center;
-  color: var(--text-color);
   font-size: 1.2em;
 }
 
@@ -105,7 +99,6 @@ body {
 label {
   display: block;
   margin-bottom: 8px;
-  color: var(--text-color);
   font-weight: 600;
 }
 
@@ -117,7 +110,6 @@ input {
   font-size: 1.3em;
 
   background-color: var(--primary-color);
-  color: var(--text-color);
 }
 
 input:focus {
@@ -129,19 +121,22 @@ input:focus {
   margin-bottom: 8px;
 }
 
+/* 合并重复定义 */
+input.correct,
+input.incorrect {
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+}
+
 input.correct {
   /* 在input里面的右侧添加一个绿色小箭头 */
   background-image: url('https://img.icons8.com/fluency/48/000000/checkmark.png');
-  background-repeat: no-repeat;
   /* 再往左一点点 */
-  background-position: right 12px center;
-  background-size: 20px;
   background-color: #d5f5e3;
 
   color: var(--correct-color);
   border-color: #d5f5e3;
-
-  transition: background-position 0s;
 }
 
 input.correct:focus {
@@ -155,13 +150,8 @@ input.correct:focus {
 
 input.incorrect {
   background-image: url('https://img.icons8.com/fluency/48/000000/delete-sign.png');
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 20px;
 
   border-color: #fadbd8;
-
-  transition: background-position 0s;
 }
 
 input.incorrect:focus {
@@ -229,8 +219,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: .9em;
-  color: var(--text-color);
+  font-size: 0.9em;
 }
 
 footer a {
