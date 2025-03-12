@@ -95,19 +95,19 @@ input.correct:focus {
 /* 一个抖动动画, 给incorrect的input添加 */
 @keyframes shake {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   25% {
-    transform: translateX(-5px);
+    transform: translate3d(-5px, 0, 0);
   }
   50% {
-    transform: translateX(5px);
+    transform: translate3d(5px, 0, 0);
   }
   75% {
-    transform: translateX(-5px);
+    transform: translate3d(-5px, 0, 0);
   }
   100% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
