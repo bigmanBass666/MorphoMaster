@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s ease-in-out;
+
+  color: var(--text-color);
+}
+
+*::selection {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}

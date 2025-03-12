@@ -5,38 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MorphoMaster</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <main class="container">
+    <main class="container flex-center-column gap-20 flex">
       <!-- 进度条区域 -->
       <div class="progress-bar">
         <div class="progress" id="progress"></div>
       </div>
 
       <!-- 单词显示区域 -->
-      <div class="word-display" id="currentWord">...</div>
-      <div class="ipa-display" id="wordIPA">...</div>
-      <div class="definition" id="wordDefinition">...</div>
-
-      <!-- 输入区域 -->
-      <div id="pluralInputGroup" class="input-group">
-        <label for="pluralInput">复数形式：</label>
-        <input type="text" id="pluralInput" />
+      <div class="word-area flex-center-column gap-10 flex">
+        <div class="word-display" id="currentWord">...</div>
+        <div class="ipa-display" id="wordIPA">...</div>
+        <div class="definition" id="wordDefinition">...</div>
       </div>
 
-      <div id="verbInputs" class="input-group hidden">
-        <label for="pastInput">过去式：</label>
-        <input type="text" id="pastInput" />
-        <label for="pastParticipleInput">过去分词：</label>
-        <input type="text" id="pastParticipleInput" />
+      <!-- 输入区域 -->
+      <div id="pluralInputGroup" class="input-group width-100pct-inner">
+        <input type="text" id="pluralInput" placeholder="Plural" />
+      </div>
+
+      <div id="verbInputs" class="input-group hidden flex-center-column gap-10 width-100pct-inner">
+        <input type="text" id="pastInput" placeholder="Past" />
+        <input type="text" id="pastParticipleInput" placeholder="Past Participle" />
       </div>
 
       <!-- 按钮区域 -->
-      <button id="submitBtn">提交</button>
-      <div class="navigation-buttons">
-        <button id="previousBtn">上一个</button>
-        <button id="nextBtn">下一个</button>
+      <div class="button-area flex-center-column flex gap-10 width-100pct-inner">
+        <button id="submitBtn">OK</button>
+        <div class="navigation-buttons gap-10 flex-center-row">
+          <button id="previousBtn">←</button>
+          <button id="nextBtn">→</button>
+        </div>
       </div>
 
       <!-- 结果反馈区域 -->

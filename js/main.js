@@ -1,15 +1,11 @@
 // main.js
 import { state } from './state.js'
 import { initTheme, toggleTheme } from './theme.js'
-import { loadProgress, saveProgress, updateProgress } from './progress.js'
-import { clearInputStyles, setupEnterHandler } from './input.js'
+import { loadProgress } from './progress.js'
+import { setupEnterHandler } from './input.js'
 import {
   updateCurrentWord,
-  getCurrentWord,
-  validateNoun,
-  validateVerb,
   checkAnswers,
-  handleAnswerResult,
   previousWord,
   nextWord,
 } from './word.js'

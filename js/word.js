@@ -1,9 +1,9 @@
-import { saveProgress, updateProgress } from './progress.js'
-import { clearInputStyles, } from './input.js'
-import { state } from './state.js'
-import {toggleConfetti} from './confetti.js'
-
 // word.js
+import { saveProgress, updateProgress } from './progress.js'
+import { clearInputStyles, clearInputStylesAndValue } from './input.js'
+import { state } from './state.js'
+import { toggleConfetti } from './confetti.js'
+
 export function updateCurrentWord() {
   const { currentWord } = getCurrentWord()
   const { elements } = state
@@ -18,10 +18,10 @@ export function updateCurrentWord() {
   elements.verbInputs.classList.toggle('hidden', isNoun)
 
   if (isNoun) {
-    clearInputStyles(elements.pluralInput)
+    clearInputStylesAndValue(elements.pluralInput)
     elements.pluralInput.focus()
   } else {
-    clearInputStyles(elements.pastInput, elements.pastParticipleInput)
+    clearInputStylesAndValue(elements.pastInput, elements.pastParticipleInput)
     elements.pastInput.focus()
   }
 }
@@ -35,8 +35,9 @@ export function getCurrentWord() {
 export function validateNoun(currentWord) {
   const input = state.elements.pluralInput.value.toLowerCase().trim()
   if (input !== currentWord.plural) {
-    state.elements.result.innerHTML = currentWord.plural
+    state.elements.result.innerHTML = `${currentWord.plural}<br>${currentWord.pluralIPA}`
     state.elements.pluralInput.classList.add('incorrect')
+    state.elements.pluralInput.select()
     return false
   }
   return true
@@ -49,16 +50,22 @@ export function validateVerb(currentWord) {
     .trim()
   let result = ''
 
-  ;[past, participle].forEach((val, i) => {
-    const correctVal = i ? currentWord.pastParticiple : currentWord.past
+  ;[participle, past].forEach((val, i) => {
+    const correctVal = i ? currentWord.past : currentWord.pastParticiple
+    const IPA = i ? currentWord.pastIPA : currentWord.pastParticipleIPA
+
     const element = i
-      ? state.elements.pastParticipleInput
-      : state.elements.pastInput
+      ? state.elements.pastInput
+      : state.elements.pastParticipleInput
     if (val !== correctVal) {
-      result += `${correctVal}<br>`
+      result += `${correctVal} ${IPA}<br>`
+
+      clearInputStyles(element)
       element.classList.add('incorrect')
+
       element.select()
     } else {
+      clearInputStyles(element)
       element.classList.add('correct')
     }
   })
