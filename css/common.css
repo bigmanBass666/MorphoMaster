@@ -2,8 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all var(--transition-speed) ease-in-out;
-  transition: width none, height none;
+  /* transition: all var(--transition-speed) ease-in-out; */
+  /* transition: width none, height none; */
+  transition: width var(--transition-speed), color var(--transition-speed),
+    background-color var(--transition-speed), opacity var(--transition-speed);
 
   color: var(--text-color);
 }
