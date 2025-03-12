@@ -2,8 +2,9 @@
 export const state = {
   words: [],
   currentWordIndex: 0,
-  elements: {
+  domElements: {
     progressBar: document.querySelector('#progress'),
+    progressText: document.querySelector('#progressText'),
     currentWord: document.querySelector('#currentWord'),
     wordDefinition: document.querySelector('#wordDefinition'),
     wordIPA: document.querySelector('#wordIPA'),

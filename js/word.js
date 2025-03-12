@@ -1,16 +1,24 @@
 // word.js
-import { saveProgress, updateProgress } from './progress.js'
-import { clearInputStyles, clearInputStylesAndValue } from './input.js'
-import { state } from './state.js'
 import { toggleConfetti } from './confetti.js'
+import { clearInputs } from './input.js'
+import { saveProgress, updateProgress } from './progress.js'
+import { state } from './state.js'
+import { validateNoun, validateVerb } from './validation.js'
 
 export function updateCurrentWord() {
-  const { currentWord } = getCurrentWord()
-  const { elements } = state
+  if (state.currentWordIndex >= state.words.length) {
+    localStorage.removeItem('progress')
+  }
 
-  elements.currentWord.textContent = currentWord.original
-  elements.wordDefinition.textContent = currentWord.definition
-  elements.wordIPA.textContent = currentWord.ipa || ''
+  const { currentWord } = getCurrentWord()
+  const { domElements: elements } = state
+
+  const updates = [
+    { element: elements.currentWord, value: currentWord.original },
+    { element: elements.wordDefinition, value: currentWord.definition },
+    { element: elements.wordIPA, value: currentWord.ipa || '' },
+  ]
+
   elements.result.classList.add('hidden')
 
   const isNoun = currentWord.type === 'noun'
@@ -18,12 +26,28 @@ export function updateCurrentWord() {
   elements.verbInputs.classList.toggle('hidden', isNoun)
 
   if (isNoun) {
-    clearInputStylesAndValue(elements.pluralInput)
-    elements.pluralInput.focus()
+    handleNounInput()
   } else {
-    clearInputStylesAndValue(elements.pastInput, elements.pastParticipleInput)
-    elements.pastInput.focus()
+    handleVerbInputs()
   }
+
+  // 一次性更新 DOM
+  updates.forEach(({ element, value }) => {
+    element.textContent = value
+  })
+}
+
+function handleNounInput() {
+  clearInputs([state.domElements.pluralInput], true)
+  state.domElements.pluralInput.focus()
+}
+
+function handleVerbInputs() {
+  clearInputs(
+    [state.domElements.pastInput, state.domElements.pastParticipleInput],
+    true
+  )
+  state.domElements.pastInput.focus()
 }
 
 export function getCurrentWord() {
@@ -31,47 +55,6 @@ export function getCurrentWord() {
     currentWord: state.words[state.currentWordIndex],
     total: state.words.length,
   }
-}
-export function validateNoun(currentWord) {
-  const input = state.elements.pluralInput.value.toLowerCase().trim()
-  if (input !== currentWord.plural) {
-    state.elements.result.innerHTML = `${currentWord.plural}<br>${currentWord.pluralIPA}`
-    state.elements.pluralInput.classList.add('incorrect')
-    state.elements.pluralInput.select()
-    return false
-  }
-  return true
-}
-
-export function validateVerb(currentWord) {
-  const past = state.elements.pastInput.value.toLowerCase().trim()
-  const participle = state.elements.pastParticipleInput.value
-    .toLowerCase()
-    .trim()
-  let result = ''
-
-  ;[participle, past].forEach((val, i) => {
-    const correctVal = i ? currentWord.past : currentWord.pastParticiple
-    const IPA = i ? currentWord.pastIPA : currentWord.pastParticipleIPA
-
-    const element = i
-      ? state.elements.pastInput
-      : state.elements.pastParticipleInput
-    if (val !== correctVal) {
-      result += `${correctVal} ${IPA}<br>`
-
-      clearInputStyles(element)
-      element.classList.add('incorrect')
-
-      element.select()
-    } else {
-      clearInputStyles(element)
-      element.classList.add('correct')
-    }
-  })
-
-  state.elements.result.innerHTML = result
-  return result === ''
 }
 
 export function checkAnswers() {
@@ -87,13 +70,7 @@ export function checkAnswers() {
   handleAnswerResult(isCorrect)
 }
 
-export function handleAnswerResult(isCorrect) {
-  const { result } = state.elements
-  result.className = `result ${isCorrect ? 'correct' : 'incorrect'}`
-  result.classList.remove('hidden')
-
-  if (!isCorrect) return
-
+function handleCorrectAnswer() {
   state.currentWordIndex++
   saveProgress()
 
@@ -101,12 +78,24 @@ export function handleAnswerResult(isCorrect) {
     updateProgress()
     updateCurrentWord()
   } else {
-    toggleConfetti()
-    state.currentWordIndex = 0
-    localStorage.removeItem('progress')
-    updateProgress()
-    updateCurrentWord()
+    handleCompletion()
   }
+}
+
+function handleCompletion() {
+  toggleConfetti()
+  state.currentWordIndex = 0
+  localStorage.removeItem('progress')
+  updateProgress()
+  updateCurrentWord()
+}
+
+export function handleAnswerResult(isCorrect) {
+  const { result } = state.domElements
+  result.className = `result ${isCorrect ? 'correct' : 'incorrect'}`
+  result.classList.remove('hidden')
+
+  if (isCorrect) handleCorrectAnswer()
 }
 
 export function previousWord() {

@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s ease-in-out;
+  transition: all var(--transition-speed) ease-in-out;
+  transition: width none, height none;
 
   color: var(--text-color);
 }

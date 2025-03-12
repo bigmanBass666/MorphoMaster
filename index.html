@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="css/utils.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
+
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"
+      as="script" />
   </head>
   <body>
     <main class="container flex-center-column gap-20">
       <!-- 进度条区域 -->
+      <div id="progressText" class="progress-text">.../...</div>
       <div class="progress-bar">
         <div class="progress" id="progress"></div>
       </div>
@@ -27,12 +33,26 @@
 
       <!-- 输入区域 -->
       <div id="pluralInputGroup" class="input-group width-100pct-inner">
-        <input type="text" id="pluralInput" placeholder="Plural" />
+        <input
+          autocapitalize="off"
+          type="text"
+          id="pluralInput"
+          placeholder="Plural" />
       </div>
 
-      <div id="verbInputs" class="input-group hidden flex-center-column gap-10 width-100pct-inner">
-        <input type="text" id="pastInput" placeholder="Past" />
-        <input type="text" id="pastParticipleInput" placeholder="Past Participle" />
+      <div
+        id="verbInputs"
+        class="input-group hidden flex-center-column gap-10 width-100pct-inner">
+        <input
+          autocapitalize="off"
+          type="text"
+          id="pastInput"
+          placeholder="Past" />
+        <input
+          autocapitalize="off"
+          type="text"
+          id="pastParticipleInput"
+          placeholder="Past Participle" />
       </div>
 
       <!-- 按钮区域 -->
@@ -59,8 +79,7 @@
     </footer>
 
     <!-- 引入必要的脚本 -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script> -->
     <script src="js/main.js" type="module"></script>
-    <!-- <script src="index.js"></script> -->
   </body>
 </html>

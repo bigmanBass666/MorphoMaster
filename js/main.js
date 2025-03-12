@@ -1,14 +1,24 @@
 // main.js
+import { API_ENDPOINTS } from './config.js'
+import { setupEnterHandler } from './input.js'
+import { loadProgress, updateProgress } from './progress.js'
 import { state } from './state.js'
 import { initTheme, toggleTheme } from './theme.js'
-import { loadProgress } from './progress.js'
-import { setupEnterHandler } from './input.js'
 import {
-  updateCurrentWord,
   checkAnswers,
-  previousWord,
   nextWord,
+  previousWord,
+  updateCurrentWord,
 } from './word.js'
+
+// 获取单词数据
+fetch(API_ENDPOINTS.WORDS)
+  .then((res) => res.json())
+  .then((data) => {
+    state.words = data
+    initApp()
+  })
+  .catch(console.error)
 
 // 初始化应用
 function initApp() {
@@ -18,33 +28,33 @@ function initApp() {
   // 其他可能的初始化逻辑...
 }
 
-// 获取单词数据
-fetch('words_Upgrade2Bach.json')
-  .then((res) => res.json())
-  .then((data) => {
-    state.words = data
-    initApp()
-  })
-  .catch(console.error)
+// 检测是否支持 localStorage
+if (typeof localStorage === 'undefined') {
+  alert('您的浏览器不支持本地存储功能，请升级浏览器。')
+}
+
+// 检测是否支持 fetch API
+if (!window.fetch) {
+  alert('您的浏览器不支持 fetch API，请升级浏览器。')
+}
+
+// 按钮区3个按钮
+document.querySelector('.button-area').addEventListener('click', (e) => {
+  const { target } = e
+  if (target.id === 'submitBtn') checkAnswers()
+  if (target.id === 'previousBtn') previousWord()
+  if (target.id === 'nextBtn') nextWord()
+})
+
+// 主题切换按钮点击事件
+state.domElements.themeToggle.addEventListener('click', toggleTheme)
 
 // 设置输入框的回车键处理
 setupEnterHandler(
-  state.elements.pluralInput,
-  state.elements.pastInput,
-  state.elements.pastParticipleInput
+  state.domElements.pluralInput,
+  state.domElements.pastInput,
+  state.domElements.pastParticipleInput
 )
-
-// 提交按钮点击事件
-state.elements.submitBtn.addEventListener('click', checkAnswers)
-
-// 上一个按钮点击事件
-state.elements.previousBtn.addEventListener('click', previousWord)
-
-// 下一个按钮点击事件
-state.elements.nextBtn.addEventListener('click', nextWord)
-
-// 主题切换按钮点击事件
-state.elements.themeToggle.addEventListener('click', toggleTheme)
 
 // 事件监听
 document.addEventListener('keydown', (e) => {

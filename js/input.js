@@ -1,15 +1,10 @@
-import { checkAnswers } from './word.js'
 // input.js
-export function clearInputStylesAndValue(...inputs) {
-  inputs.forEach((input) => {
-    input.classList.remove('correct', 'incorrect')
-    input.value = ''
-  })
-}
+import { checkAnswers } from './word.js'
 
-export function clearInputStyles(...inputs) {
+export function clearInputs(inputs, clearValues = false) {
   inputs.forEach((input) => {
     input.classList.remove('correct', 'incorrect')
+    if (clearValues) input.value = ''
   })
 }
 
