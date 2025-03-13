@@ -2,10 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* transition: all var(--transition-speed) ease-in-out; */
-  /* transition: width none, height none; */
-  transition: width var(--transition-speed), color var(--transition-speed),
-    background-color var(--transition-speed), opacity var(--transition-speed);
+
+  transition-property: color, background-color, opacity, width, border-color;
+  transition-timing-function: var(--transition-timing-function);
+  transition-duration: var(--transition-speed);
 
   color: var(--text-color);
 }
@@ -13,4 +13,29 @@
 *::selection {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+/* 为 Flexbox 添加浏览器前缀 */
+.flex-center-column {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-center-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }

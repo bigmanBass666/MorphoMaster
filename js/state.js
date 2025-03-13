@@ -2,6 +2,13 @@
 export const state = {
   words: [],
   currentWordIndex: 0,
+  theme: 'light',
+  isConfettiActive: false,
+  progress: {
+    currentIndex: 0,
+    total: 0,
+    percentage: 0
+  },
   domElements: {
     progressBar: document.querySelector('#progress'),
     progressText: document.querySelector('#progressText'),

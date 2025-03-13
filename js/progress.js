@@ -1,6 +1,8 @@
 import { state } from './state.js'
 
 export function loadProgress() {
+  if (state.words.length === 0) return // 新增校验
+
   const saved = localStorage.getItem('progress')
 
   if (!saved) {
@@ -37,7 +39,8 @@ export function updateProgress() {
 }
 
 function calculateProgress() {
-  return (state.currentWordIndex / state.words.length) * 100
+  const index = Math.min(state.currentWordIndex, state.words.length - 1)
+  return (index / state.words.length) * 100
 }
 
 function setProgressUI(progress) {
@@ -49,4 +52,10 @@ function setProgressUI(progress) {
   const progressText = `${state.currentWordIndex + 1}/${state.words.length}`
   state.domElements.progressBar.style.width = `${progress}%`
   state.domElements.progressText.textContent = progressText
+}
+
+export function resetProgress() {
+  state.currentWordIndex = 0
+  localStorage.removeItem('progress')
+  updateProgress()
 }

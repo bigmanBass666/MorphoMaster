@@ -1,5 +1,4 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--background-color);
   padding: 20px;
   display: flex;
@@ -37,36 +36,38 @@ body {
   height: 100%;
   background-color: var(--secondary-color);
   width: 0%;
-  transition: width 0.2s;
   border-radius: 4px;
 }
 
 .word-display {
-  font-size: 2.2rem;
+  font-size: 2.2em;
   font-weight: bold;
+  /* line-height: 0.8; */
 }
 
-.definition {
-  background-color: var(--surface-color);
-  font-size: 1.2em;
+.definition,
+.ipa-display {
+  font-size: 1.1em;
 }
 
 input {
+  width: 100%;
   padding: 12px;
   border: 2px solid transparent;
   border-radius: 6px;
   font-size: 1.3em;
-
   background-color: var(--primary-color);
-}
+  color: var(--text-color);
 
-input::placeholder {
-  font-size: 0.9em;
-}
+  ::placeholder {
+    font-size: 0.9em;
+    color: var(--border-color);
+  }
 
-input:focus {
-  outline: none;
-  border-color: var(--border-color);
+  &:focus {
+    outline: none;
+    border-color: var(--border-color);
+  }
 }
 
 /* 合并重复定义 */
@@ -79,21 +80,15 @@ input.incorrect {
 
 input.correct {
   /* 在input里面的右侧添加一个绿色小箭头 */
-  background-image: url('https://img.icons8.com/fluency/48/000000/checkmark.png');
+  background-image: url('../assets/icons/checkmark.png');
   /* 再往左一点点 */
-  background-color: #d5f5e3;
+  background-color: var(--correct-background-color);
 
   color: var(--correct-color);
-  border-color: #d5f5e3;
 }
 
 input.correct:focus {
   border-color: var(--correct-color);
-}
-
-.incorrect {
-  background-color: var(--incorrect-background-color);
-  color: var(--incorrect-border-color);
 }
 
 /* 一个抖动动画, 给incorrect的input添加 */
@@ -115,8 +110,13 @@ input.correct:focus {
   }
 }
 
+.incorrect {
+  background-color: var(--incorrect-background-color);
+  color: var(--incorrect-border-color);
+}
+
 input.incorrect {
-  background-image: url('https://img.icons8.com/fluency/48/000000/delete-sign.png');
+  background-image: url('../assets/icons/cross.png');
   animation: shake 0.4s ease-in-out;
 }
 
@@ -125,29 +125,29 @@ input.incorrect:focus {
 }
 
 button {
-  background-color: var(--primary-color);
-  border: none;
-  padding: 12px 20px;
   width: 100%;
+  padding: 12px 20px;
+  border: none;
   border-radius: 6px;
   font-size: 1rem;
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-button[disabled] {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-button[disabled]:hover {
   background-color: var(--primary-color);
   color: var(--text-color);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--text-color);
+    }
+  }
 }
 
 .hidden {

@@ -1,9 +1,6 @@
 export function toggleConfetti() {
   // 动态导入 confetti 库
-  import(
-    // 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js'
-    '../libs/confetti.browser.min.js'
-  ).then(() => {
+  import('../libs/confetti.browser.min.js').then(() => {
     let end = Date.now() + 10 * 1000
 
     // go Buckeyes!

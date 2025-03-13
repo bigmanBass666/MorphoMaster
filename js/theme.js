@@ -8,8 +8,9 @@ export function initTheme() {
 }
 
 export function toggleTheme() {
-  document.body.classList.toggle('dark-mode')
-  const isDark = document.body.classList.contains('dark-mode')
-  localStorage.setItem('theme', isDark ? 'dark' : 'light')
-  state.domElements.themeToggle.innerHTML = isDark ? '&#9788;' : '&#9790;'
+  state.theme = state.theme === 'light' ? 'dark' : 'light'
+  document.body.classList.toggle('dark-mode', state.theme === 'dark')
+  localStorage.setItem('theme', state.theme)
+  state.domElements.themeToggle.innerHTML =
+    state.theme === 'dark' ? '&#9788;' : '&#9790;'
 }

@@ -4,6 +4,7 @@ import { clearInputs } from './input.js'
 import { saveProgress, updateProgress } from '../progress.js'
 import { state } from '../state.js'
 import { validateNoun, validateVerb } from './validation.js'
+import { resetProgress } from '../progress.js'
 
 export function updateCurrentWord() {
   if (state.currentWordIndex >= state.words.length) {
@@ -39,7 +40,8 @@ export function updateCurrentWord() {
 
 function handleNounInput() {
   clearInputs([state.domElements.pluralInput], true)
-  state.domElements.pluralInput.focus()
+  // 添加延时确保 DOM 更新后触发焦点
+  // setTimeout(() => state.domElements.pluralInput.focus(), 0)
 }
 
 function handleVerbInputs() {
@@ -47,7 +49,15 @@ function handleVerbInputs() {
     [state.domElements.pastInput, state.domElements.pastParticipleInput],
     true
   )
-  state.domElements.pastInput.focus()
+  // 如果焦点在于过去分词输入框或复数输入框，则将焦点移到过去式输入框
+  if (
+    document.activeElement === state.domElements.pastParticipleInput ||
+    document.activeElement === state.domElements.pluralInput
+  ) {
+    setTimeout(() => {
+      state.domElements.pastInput.focus()
+    }, 0)
+  }
 }
 
 export function getCurrentWord() {
@@ -84,9 +94,7 @@ function handleCorrectAnswer() {
 
 function handleCompletion() {
   toggleConfetti()
-  state.currentWordIndex = 0
-  localStorage.removeItem('progress')
-  updateProgress()
+  resetProgress() // 调用新方法
   updateCurrentWord()
 }
 

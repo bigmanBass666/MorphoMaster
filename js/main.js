@@ -13,13 +13,20 @@ import {
 } from './modules/word.js'
 
 // 获取单词数据
+// 在 main.js 中使用兼容性更好的 fetch 错误处理
 fetch(API_ENDPOINTS.WORDS)
-  .then((res) => res.json())
+  .then((res) => {
+    if (!res.ok) throw new Error('网络响应不正常')
+    return res.json()
+  })
   .then((data) => {
     state.words = data
     initApp()
   })
-  .catch(console.error)
+  .catch((error) => {
+    console.error('获取单词数据失败:', error)
+    alert('无法加载单词数据，请检查网络连接。')
+  })
 
 // 初始化应用
 function initApp() {
