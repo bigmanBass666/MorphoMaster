@@ -1,9 +1,9 @@
 # MorphoMaster - 英语形态学习助手
 
-> 此文档由DeepSeek生成
-> 项目名由DeepSeek生成, 项目第一版是Kimi生成
-> 后面几版由我和它俩一起完善
-> 仅供个人娱乐, 无推广目的
+> 此文档由DeepSeek生成, 我修改.
+> 项目名由DeepSeek生成, 项目第一版是Kimi生成.
+> 后面几版由我和它俩一起完善.
+> 仅供个人娱乐, 无推广目的.
 
 ![MorphoMaster 界面截图](https://pic2.ziyuan.wang/user/bigmanBass666/2025/03/1741889876284_118dad7818eb6.png)
 
@@ -99,6 +99,7 @@ function validateNoun(input) {
 - [Kimi](https://kimi.moonshot.cn/): 提供项目第一版, 部分单词数据等
 - 粒子动画：[canvas-confetti](https://github.com/catdad/canvas-confetti)
 - 图标资源：[iconfont](https://iconfont.cn)
+- 主题配色: <https://uchu.style/simple.html>
 
 ---
 
