@@ -1,5 +1,6 @@
 // state.js
-export const state = {
+
+export const createState = () => ({
   words: [],
   currentWordIndex: 0,
   theme: 'light',
@@ -7,7 +8,7 @@ export const state = {
   progress: {
     currentIndex: 0,
     total: 0,
-    percentage: 0
+    percentage: 0,
   },
   domElements: {
     progressBar: document.querySelector('#progress'),
@@ -26,4 +27,6 @@ export const state = {
     result: document.querySelector('#result'),
     themeToggle: document.querySelector('#themeToggle'),
   },
-}
+})
+
+export const state = createState()
