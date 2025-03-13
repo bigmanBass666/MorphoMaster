@@ -1,16 +1,13 @@
 // main.js
-import { toggleConfetti } from './modules/confetti.js'
 import { API_ENDPOINTS } from './config.js'
+import { checkAnswers } from './modules/answer.js'
+import { toggleConfetti } from './modules/confetti.js'
 import { setupEnterHandler } from './modules/input.js'
+import { nextWord, previousWord } from './modules/navigation.js'
+import { updateCurrentWord } from './modules/word.js'
 import { loadProgress } from './progress.js'
 import { state } from './state.js'
 import { initTheme, toggleTheme } from './theme.js'
-import {
-  checkAnswers,
-  nextWord,
-  previousWord,
-  updateCurrentWord,
-} from './modules/word.js'
 
 // 获取单词数据
 // 在 main.js 中使用兼容性更好的 fetch 错误处理
