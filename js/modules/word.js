@@ -1,8 +1,8 @@
 // word.js
 import { toggleConfetti } from './confetti.js'
 import { clearInputs } from './input.js'
-import { saveProgress, updateProgress } from './progress.js'
-import { state } from './state.js'
+import { saveProgress, updateProgress } from '../progress.js'
+import { state } from '../state.js'
 import { validateNoun, validateVerb } from './validation.js'
 
 export function updateCurrentWord() {

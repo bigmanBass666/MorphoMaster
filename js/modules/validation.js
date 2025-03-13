@@ -1,4 +1,4 @@
-import { state } from './state.js'
+import { state } from '../state.js'
 import { clearInputs } from './input.js'
 
 function normalizeInput(input) {

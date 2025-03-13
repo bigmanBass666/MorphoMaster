@@ -1,16 +1,19 @@
 export function toggleConfetti() {
   // 动态导入 confetti 库
   import(
-    'https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js'
+    // 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js'
+    '../libs/confetti.browser.min.js'
   ).then(() => {
     let end = Date.now() + 10 * 1000
 
     // go Buckeyes!
-    let colors = ['#bb0000', '#ffffff']
+    let colors = document.body.classList.contains('dark-mode')
+      ? ['#bb0000', '#ffffff'] // 暗色背景下的颜色
+      : ['#bb0000', '#1a1a2e'] // 亮色背景下的颜色
 
     ;(function frame() {
       confetti({
-        particleCount: 3,
+        particleCount: 2,
         angle: 60,
         spread: 55,
         origin: { x: 0 },

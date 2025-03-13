@@ -10,7 +10,7 @@
   --correct-color: #10b981;
   --incorrect-border-color: #ef4444;
   --incorrect-background-color: rgba(255, 176, 169, 0.82);
-  --transition-speed: .2s;
+  --transition-speed: 0.2s;
 }
 
 .dark-mode {

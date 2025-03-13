@@ -1,7 +1,8 @@
 // main.js
+import { toggleConfetti } from './modules/confetti.js'
 import { API_ENDPOINTS } from './config.js'
-import { setupEnterHandler } from './input.js'
-import { loadProgress, updateProgress } from './progress.js'
+import { setupEnterHandler } from './modules/input.js'
+import { loadProgress } from './progress.js'
 import { state } from './state.js'
 import { initTheme, toggleTheme } from './theme.js'
 import {
@@ -9,7 +10,7 @@ import {
   nextWord,
   previousWord,
   updateCurrentWord,
-} from './word.js'
+} from './modules/word.js'
 
 // 获取单词数据
 fetch(API_ENDPOINTS.WORDS)

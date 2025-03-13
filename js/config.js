@@ -1,8 +1,7 @@
 // config.js
 export const CSS_VARIABLES = {
-  PRIMARY_COLOR: '--primary-color',
-  SECONDARY_COLOR: '--secondary-color',
-  // 其他 CSS 变量...
+  PRIMARY_COLOR: 'var(--primary-color)',
+  SECONDARY_COLOR: 'var(--secondary-color)',
 }
 
 export const API_ENDPOINTS = {
