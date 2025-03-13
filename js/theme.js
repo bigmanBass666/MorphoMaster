@@ -4,14 +4,25 @@ export function initTheme() {
   const savedTheme = localStorage.getItem('theme') || 'light'
   state.theme = savedTheme
   document.body.classList.toggle('dark-mode', savedTheme === 'dark')
-  state.domElements.themeToggle.innerHTML =
-    savedTheme === 'dark' ? '&#9788;' : '&#9790;'
 }
 
 export function toggleTheme() {
   state.theme = state.theme === 'light' ? 'dark' : 'light'
   document.body.classList.toggle('dark-mode', state.theme === 'dark')
   localStorage.setItem('theme', state.theme)
-  state.domElements.themeToggle.innerHTML =
-    state.theme === 'dark' ? '&#9788;' : '&#9790;'
+}
+
+// 源码切换按钮逻辑
+export function initSourceCodeToggle() {
+  const toggle = document.querySelector('#sourceCodeToggle')
+
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation()
+    toggle.classList.toggle('active')
+  })
+
+  // 点击页面其他区域关闭子菜单
+  document.addEventListener('click', () => {
+    toggle.classList.remove('active')
+  })
 }

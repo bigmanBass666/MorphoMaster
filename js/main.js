@@ -7,7 +7,7 @@ import { nextWord, previousWord } from './modules/navigation.js'
 import { updateCurrentWord } from './modules/word.js'
 import { loadProgress } from './progress.js'
 import { state } from './state.js'
-import { initTheme, toggleTheme } from './theme.js'
+import { initTheme, toggleTheme, initSourceCodeToggle } from './theme.js'
 
 // 获取单词数据
 fetch(API_ENDPOINTS.WORDS)
@@ -27,6 +27,7 @@ fetch(API_ENDPOINTS.WORDS)
 // 初始化应用
 function initApp() {
   initTheme() // 初始化主题
+  initSourceCodeToggle() // 新增初始化
   loadProgress() // 加载进度
   updateCurrentWord() // 更新当前单词显示
   // 其他可能的初始化逻辑...
@@ -70,9 +71,9 @@ document.addEventListener('keydown', (e) => {
       case 'l':
         nextWord()
         break
-      case 'c':
-        toggleConfetti()
-        break
+      // case 'c':
+      //   toggleConfetti()
+      //   break
       case 't':
         toggleTheme()
         break

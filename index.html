@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
@@ -55,8 +54,8 @@
       <div class="button-area flex-center-column gap-10 width-100pct-inner">
         <button id="submitBtn" type="button" title="Enter">OK</button>
         <div class="navigation-buttons gap-10 flex-center-row">
-          <button id="previousBtn" type="button" title="Alt+l">←</button>
-          <button id="nextBtn" type="button" title="Alt+h">→</button>
+          <button id="previousBtn" type="button" title="Alt+h">←</button>
+          <button id="nextBtn" type="button" title="Alt+l">→</button>
         </div>
       </div>
 
@@ -65,16 +64,34 @@
     </main>
 
     <!-- 主题切换按钮 -->
-    <div id="themeToggle" title="偷天换日">&#9790;</div>
+    <div class="btn-pressable themeToggle" id="themeToggle" title="偷天换日">
+      <i class="iconfont icon-sun"></i>
+      <i class="iconfont icon-moon"></i>
+    </div>
 
     <footer>
-      ©️
+      <i class="iconfont icon-copyright"></i>
       <a target="_blank" href="https://www.deepseek.com/">DeepSeek</a> ·
       <a target="_blank" href="https://kimi.moonshot.cn/">Kimi</a> ·
       <a target="_blank" href="https://music.163.com/#/user/home?id=1394582249"
         >Jason Liu</a
       >
     </footer>
+
+    <!-- 源码切换按钮 -->
+    <div id="sourceCodeToggle" class="source-code-toggle">
+      <div class="toggle-icon btn-pressable" title="Source Code">
+        <i class="iconfont icon-source-code"></i>
+      </div>
+      <div class="sub-buttons">
+        <a title="GitHub" href="https://github.com/bigmanBass666/morphomaster" target="_blank" class="sub-button btn-pressable">
+          <i class="iconfont icon-github"></i>
+        </a>
+        <a title="Gitee" href="https://gitee.com/bigmanBass666/morphomaster" target="_blank" class="sub-button btn-pressable">
+          <i class="iconfont icon-gitee"></i>
+        </a>
+      </div>
+    </div>
 
     <!-- 引入必要的脚本 -->
     <script src="js/main.js" type="module"></script>

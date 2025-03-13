@@ -1,3 +1,6 @@
 /* main.css */
 @import 'vars.css';
 @import 'utils.css';
+@import 'normalize.css';
+@import 'common.css';
+@import 'iconfont/iconfont.css';

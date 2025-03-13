@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 
-  transition-property: color, background-color, opacity, width, border-color;
+  transition-property: color, background-color, opacity, width, border-color, transform;
   transition-timing-function: var(--transition-timing-function);
   transition-duration: var(--transition-speed);
 
