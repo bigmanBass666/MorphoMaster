@@ -7,6 +7,28 @@ body {
   min-height: 100vh;
 }
 
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--surface-color);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  border: 4px solid var(--primary-color);
+  border-top-color: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
 .container {
   background-color: var(--surface-color);
   border-radius: 12px;
@@ -93,20 +115,16 @@ input.correct:focus {
 
 /* 一个抖动动画, 给incorrect的input添加 */
 @keyframes shake {
-  0% {
-    transform: translate3d(0, 0, 0);
+  0%,
+  100% {
+    transform: translateX(0);
   }
-  25% {
-    transform: translate3d(-5px, 0, 0);
+  25%,
+  75% {
+    transform: translateX(-5px);
   }
   50% {
-    transform: translate3d(5px, 0, 0);
-  }
-  75% {
-    transform: translate3d(-5px, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(5px);
   }
 }
 

@@ -9,8 +9,8 @@ import { loadProgress } from './progress.js'
 import { state } from './state.js'
 import { initTheme, toggleTheme } from './theme.js'
 
+
 // 获取单词数据
-// 在 main.js 中使用兼容性更好的 fetch 错误处理
 fetch(API_ENDPOINTS.WORDS)
   .then((res) => {
     if (!res.ok) throw new Error('网络响应不正常')

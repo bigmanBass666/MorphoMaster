@@ -13,7 +13,11 @@ export function handleVerbInputs() {
     [state.domElements.pastInput, state.domElements.pastParticipleInput],
     true
   )
-  // 如果焦点在于过去分词输入框或复数输入框，则将焦点移到过去式输入框
+  // 如果焦点在过去分词输入框或复数输入框，则将焦点移到过去式输入框
+  manageVerbInputFocus()
+}
+
+export function manageVerbInputFocus() {
   if (
     document.activeElement === state.domElements.pastParticipleInput ||
     document.activeElement === state.domElements.pluralInput

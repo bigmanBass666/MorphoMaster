@@ -28,10 +28,13 @@ export function updateCurrentWord() {
     handleVerbInputs()
   }
 
-  // 一次性更新 DOM
+  const fragment = document.createDocumentFragment()
   updates.forEach(({ element, value }) => {
-    element.textContent = value
+    const clone = element.cloneNode()
+    clone.textContent = value
+    fragment.appendChild(clone)
   })
+  document.querySelector('.word-area').replaceChildren(fragment)
 }
 
 export function getCurrentWord() {

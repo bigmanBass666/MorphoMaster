@@ -5,5 +5,5 @@ export const CSS_VARIABLES = {
 }
 
 export const API_ENDPOINTS = {
-  WORDS: 'words_Upgrade2Bach.json',
+  WORDS: '../data/words_Upgrade2Bach.json',
 }

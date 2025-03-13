@@ -1,7 +1,13 @@
 import { state } from '../state.js'
 
+const SPECIAL_CHARS_REGEX = /[-\/\\^$*+?.()|[\]{}]/g
+
 function normalizeInput(input) {
-  return input.toLowerCase().replace(/\s+/g, ' ').trim()
+  return input
+    .toLowerCase()
+    .replace(SPECIAL_CHARS_REGEX, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
 }
 
 export function validateNoun(currentWord) {
