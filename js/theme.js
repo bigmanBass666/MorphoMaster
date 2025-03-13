@@ -2,6 +2,7 @@ import { state } from './state.js'
 // theme.js
 export function initTheme() {
   const savedTheme = localStorage.getItem('theme') || 'light'
+  state.theme = savedTheme
   document.body.classList.toggle('dark-mode', savedTheme === 'dark')
   state.domElements.themeToggle.innerHTML =
     savedTheme === 'dark' ? '&#9788;' : '&#9790;'

@@ -12,8 +12,8 @@ export function updateCurrentWord() {
 
   const updates = [
     { element: elements.currentWord, value: currentWord.original },
-    { element: elements.wordDefinition, value: currentWord.definition },
     { element: elements.wordIPA, value: currentWord.ipa || '' },
+    { element: elements.wordDefinition, value: currentWord.definition },
   ]
 
   elements.result.classList.add('hidden')

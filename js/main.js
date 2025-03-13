@@ -9,7 +9,6 @@ import { loadProgress } from './progress.js'
 import { state } from './state.js'
 import { initTheme, toggleTheme } from './theme.js'
 
-
 // 获取单词数据
 fetch(API_ENDPOINTS.WORDS)
   .then((res) => {
