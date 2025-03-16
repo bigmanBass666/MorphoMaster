@@ -131,6 +131,16 @@
   },
   {
     "type": "verb",
+    "original": "wear",
+    "ipa": "/weə(r)/",
+    "past": "wore",
+    "pastIPA": "/wɔː(r)/",
+    "pastParticiple": "worn",
+    "pastParticipleIPA": "/wɔːrn/",
+    "definition": "穿"
+  },
+  {
+    "type": "verb",
     "original": "become",
     "ipa": "/bɪˈkʌm/",
     "past": "became",
