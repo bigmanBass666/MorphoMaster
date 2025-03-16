@@ -112,6 +112,14 @@
     "definition": "媒体"
   },
   {
+  "type": "noun",
+  "original": "ox",
+  "ipa": "/ɒks/",
+  "plural": "oxen",
+  "pluralIPA": "/ˈɒksən/",
+  "definition": "公牛"
+  },
+  {
     "type": "verb",
     "original": "eat",
     "ipa": "/iːt/",
@@ -120,6 +128,16 @@
     "pastParticiple": "eaten",
     "pastParticipleIPA": "/ˈiːtn/",
     "definition": "吃"
+  },
+  {
+    "type": "verb",
+    "original": "wear",
+    "ipa": "/weə(r)/",
+    "past": "wore",
+    "pastIPA": "/wɔː(r)/",
+    "pastParticiple": "worn",
+    "pastParticipleIPA": "/wɔːrn/",
+    "definition": "穿"
   },
   {
     "type": "verb",
