@@ -40,12 +40,12 @@ export function validateVerb(currentWord) {
     }
   }
 
+  checkInput(state.domElements.pastInput, currentWord.past, currentWord.pastIPA)
   checkInput(
     state.domElements.pastParticipleInput,
     currentWord.pastParticiple,
     currentWord.pastParticipleIPA
   )
-  checkInput(state.domElements.pastInput, currentWord.past, currentWord.pastIPA)
 
   state.domElements.result.innerHTML = resultHTML
   return !hasError
