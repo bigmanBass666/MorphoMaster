@@ -16,6 +16,110 @@
     "definition": "基础"
   },
   {
+    "type": "noun",
+    "original": "child",
+    "ipa": "/tʃaɪld/",
+    "plural": "children",
+    "pluralIPA": "/ˈtʃɪldrən/",
+    "definition": "孩子"
+  },
+  {
+    "type": "noun",
+    "original": "crisis",
+    "ipa": "/ˈkraɪsɪs/",
+    "plural": "crises",
+    "pluralIPA": "/ˈkraɪsiːz/",
+    "definition": "危机"
+  },
+  {
+    "type": "noun",
+    "original": "criterion",
+    "ipa": "/kraɪˈtɪəriən/",
+    "plural": "criteria",
+    "pluralIPA": "/kraɪˈtɪəriə/",
+    "definition": "标准"
+  },
+  {
+    "type": "noun",
+    "original": "diagnosis",
+    "ipa": "/daɪəgˈnəʊsɪs/",
+    "plural": "diagnoses",
+    "pluralIPA": "/daɪəgˈnəʊsiːz/",
+    "definition": "诊断"
+  },
+  {
+    "type": "noun",
+    "original": "focus",
+    "ipa": "/ˈfəʊkəs/",
+    "plural": "foci",
+    "pluralIPA": "/ˈfəʊkai/",
+    "definition": "焦点"
+  },
+  {
+    "type": "noun",
+    "original": "foot",
+    "ipa": "/fʊt/",
+    "plural": "feet",
+    "pluralIPA": "/fiːt/",
+    "definition": "脚"
+  },
+  {
+    "type": "noun",
+    "original": "man",
+    "ipa": "/mæn/",
+    "plural": "men",
+    "pluralIPA": "/men/",
+    "definition": "男人"
+  },
+  {
+    "type": "noun",
+    "original": "medium",
+    "ipa": "/ˈmiːdiəm/",
+    "plural": "media",
+    "pluralIPA": "/ˈmiːdiə/",
+    "definition": "媒体"
+  },
+  {
+    "type": "noun",
+    "original": "mouse",
+    "ipa": "/maʊs/",
+    "plural": "mice",
+    "pluralIPA": "/maɪs/",
+    "definition": "老鼠"
+  },
+  {
+    "type": "noun",
+    "original": "ox",
+    "ipa": "/ɒks/",
+    "plural": "oxen",
+    "pluralIPA": "/ˈɒksən/",
+    "definition": "公牛"
+  },
+  {
+    "type": "noun",
+    "original": "phenomenon",
+    "ipa": "/fɪˈnɒmənɒn/",
+    "plural": "phenomena",
+    "pluralIPA": "/fɪˈnɒmənə/",
+    "definition": "现象"
+  },
+  {
+    "type": "noun",
+    "original": "tooth",
+    "ipa": "/tʊθ/",
+    "plural": "teeth",
+    "pluralIPA": "/tiːθ/",
+    "definition": "牙齿"
+  },
+  {
+    "type": "noun",
+    "original": "woman",
+    "ipa": "/ˈwʊmən/",
+    "plural": "women",
+    "pluralIPA": "/ˈwɪmɪn/",
+    "definition": "女人"
+  },
+  {
     "type": "verb",
     "original": "bear",
     "ipa": "/beə(r)/",
@@ -116,14 +220,6 @@
     "definition": "抓住"
   },
   {
-    "type": "noun",
-    "original": "child",
-    "ipa": "/tʃaɪld/",
-    "plural": "children",
-    "pluralIPA": "/ˈtʃɪldrən/",
-    "definition": "孩子"
-  },
-  {
     "type": "verb",
     "original": "choose",
     "ipa": "/tʃuːz/",
@@ -132,30 +228,6 @@
     "pastParticiple": "chosen",
     "pastParticipleIPA": "/ˈtʃəʊzən/",
     "definition": "选择"
-  },
-  {
-    "type": "noun",
-    "original": "crisis",
-    "ipa": "/ˈkraɪsɪs/",
-    "plural": "crises",
-    "pluralIPA": "/ˈkraɪsiːz/",
-    "definition": "危机"
-  },
-  {
-    "type": "noun",
-    "original": "criterion",
-    "ipa": "/kraɪˈtɪəriən/",
-    "plural": "criteria",
-    "pluralIPA": "/kraɪˈtɪəriə/",
-    "definition": "标准"
-  },
-  {
-    "type": "noun",
-    "original": "diagnosis",
-    "ipa": "/daɪəgˈnəʊsɪs/",
-    "plural": "diagnoses",
-    "pluralIPA": "/daɪəgˈnəʊsiːz/",
-    "definition": "诊断"
   },
   {
     "type": "verb",
@@ -226,22 +298,6 @@
     "pastParticiple": "flown",
     "pastParticipleIPA": "/floʊn/",
     "definition": "飞"
-  },
-  {
-    "type": "noun",
-    "original": "focus",
-    "ipa": "/ˈfəʊkəs/",
-    "plural": "foci",
-    "pluralIPA": "/ˈfəʊkai/",
-    "definition": "焦点"
-  },
-  {
-    "type": "noun",
-    "original": "foot",
-    "ipa": "/fʊt/",
-    "plural": "feet",
-    "pluralIPA": "/fiːt/",
-    "definition": "脚"
   },
   {
     "type": "verb",
@@ -384,22 +440,6 @@
     "definition": "制作"
   },
   {
-    "type": "noun",
-    "original": "man",
-    "ipa": "/mæn/",
-    "plural": "men",
-    "pluralIPA": "/men/",
-    "definition": "男人"
-  },
-  {
-    "type": "noun",
-    "original": "medium",
-    "ipa": "/ˈmiːdiəm/",
-    "plural": "media",
-    "pluralIPA": "/ˈmiːdiə/",
-    "definition": "媒体"
-  },
-  {
     "type": "verb",
     "original": "meet",
     "ipa": "/miːt/",
@@ -410,22 +450,6 @@
     "definition": "见面"
   },
   {
-    "type": "noun",
-    "original": "mouse",
-    "ipa": "/maʊs/",
-    "plural": "mice",
-    "pluralIPA": "/maɪs/",
-    "definition": "老鼠"
-  },
-  {
-    "type": "noun",
-    "original": "ox",
-    "ipa": "/ɒks/",
-    "plural": "oxen",
-    "pluralIPA": "/ˈɒksən/",
-    "definition": "公牛"
-  },
-  {
     "type": "verb",
     "original": "pay",
     "ipa": "/peɪ/",
@@ -434,14 +458,6 @@
     "pastParticiple": "paid",
     "pastParticipleIPA": "/peɪd/",
     "definition": "支付"
-  },
-  {
-    "type": "noun",
-    "original": "phenomenon",
-    "ipa": "/fɪˈnɒmənɒn/",
-    "plural": "phenomena",
-    "pluralIPA": "/fɪˈnɒmənə/",
-    "definition": "现象"
   },
   {
     "type": "verb",
@@ -624,14 +640,6 @@
     "definition": "撕"
   },
   {
-    "type": "noun",
-    "original": "tooth",
-    "ipa": "/tʊθ/",
-    "plural": "teeth",
-    "pluralIPA": "/tiːθ/",
-    "definition": "牙齿"
-  },
-  {
     "type": "verb",
     "original": "understand",
     "ipa": "/ˌʌndərstænd/",
@@ -650,14 +658,6 @@
     "pastParticiple": "worn",
     "pastParticipleIPA": "/wɔːrn/",
     "definition": "穿"
-  },
-  {
-    "type": "noun",
-    "original": "woman",
-    "ipa": "/ˈwʊmən/",
-    "plural": "women",
-    "pluralIPA": "/ˈwɪmɪn/",
-    "definition": "女人"
   },
   {
     "type": "verb",
