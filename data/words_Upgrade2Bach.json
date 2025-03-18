@@ -121,10 +121,40 @@
   },
   {
     "type": "verb",
+    "original": "arise",
+    "ipa": "/əˈraɪz/",
+    "past": "arose",
+    "pastIPA": "/əˈrəʊz/",
+    "pastParticiple": "arisen",
+    "pastParticipleIPA": "/əˈrɪzən/",
+    "definition": "产生"
+  },
+  {
+    "type": "verb",
+    "original": "awake",
+    "ipa": "/əˈweɪk/",
+    "past": "awoke",
+    "pastIPA": "/əˈwəʊk/",
+    "pastParticiple": "awoken",
+    "pastParticipleIPA": "/əˈwəʊkən/",
+    "definition": "唤醒"
+  },
+  {
+    "type": "verb",
+    "original": "be",
+    "ipa": "/biː/",
+    "past": "was/were",
+    "pastIPA": "/wɒz/wə/",
+    "pastParticiple": "been",
+    "pastParticipleIPA": "/biːn/",
+    "definition": "是"
+  },
+  {
+    "type": "verb",
     "original": "bear",
-    "ipa": "/beə(r)/",
+    "ipa": "/beər/",
     "past": "bore",
-    "pastIPA": "/bɔː(r)/",
+    "pastIPA": "/bɔːr/",
     "pastParticiple": "born",
     "pastParticipleIPA": "/bɔːrn/",
     "definition": "生"
@@ -161,13 +191,63 @@
   },
   {
     "type": "verb",
+    "original": "bet",
+    "ipa": "/bet/",
+    "past": "bet",
+    "pastIPA": "/bet/",
+    "pastParticiple": "bet",
+    "pastParticipleIPA": "/bet/",
+    "definition": "打赌"
+  },
+  {
+    "type": "verb",
+    "original": "bite",
+    "ipa": "/baɪt/",
+    "past": "bit",
+    "pastIPA": "/bɪt/",
+    "pastParticiple": "bitten",
+    "pastParticipleIPA": "/ˈbɪtən/",
+    "definition": "咬"
+  },
+  {
+    "type": "verb",
+    "original": "bleed",
+    "ipa": "/bliːd/",
+    "past": "bled",
+    "pastIPA": "/bled/",
+    "pastParticiple": "bled",
+    "pastParticipleIPA": "/bled/",
+    "definition": "流血"
+  },
+  {
+    "type": "verb",
+    "original": "blow",
+    "ipa": "/bləʊ/",
+    "past": "blew",
+    "pastIPA": "/bljuː/",
+    "pastParticiple": "blown",
+    "pastParticipleIPA": "/bləʊn/",
+    "definition": "吹"
+  },
+  {
+    "type": "verb",
     "original": "break",
     "ipa": "/breɪk/",
     "past": "broke",
-    "pastIPA": "/broʊk/",
+    "pastIPA": "/brəʊk/",
     "pastParticiple": "broken",
-    "pastParticipleIPA": "/ˈbroʊkən/",
+    "pastParticipleIPA": "/ˈbrəʊkən/",
     "definition": "打破"
+  },
+  {
+    "type": "verb",
+    "original": "breed",
+    "ipa": "/briːd/",
+    "past": "bred",
+    "pastIPA": "/bred/",
+    "pastParticiple": "bred",
+    "pastParticipleIPA": "/bred/",
+    "definition": "繁殖"
   },
   {
     "type": "verb",
@@ -178,6 +258,16 @@
     "pastParticiple": "brought",
     "pastParticipleIPA": "/brɔːt/",
     "definition": "带来"
+  },
+  {
+    "type": "verb",
+    "original": "broadcast",
+    "ipa": "/ˈbrɔːdkɑːst/",
+    "past": "broadcast",
+    "pastIPA": "/ˈbrɔːdkɑːst/",
+    "pastParticiple": "broadcast",
+    "pastParticipleIPA": "/ˈbrɔːdkɑːst/",
+    "definition": "广播"
   },
   {
     "type": "verb",
@@ -201,13 +291,33 @@
   },
   {
     "type": "verb",
+    "original": "burst",
+    "ipa": "/bɜːrst/",
+    "past": "burst",
+    "pastIPA": "/bɜːrst/",
+    "pastParticiple": "burst",
+    "pastParticipleIPA": "/bɜːrst/",
+    "definition": "爆"
+  },
+  {
+    "type": "verb",
     "original": "buy",
     "ipa": "/baɪ/",
     "past": "bought",
     "pastIPA": "/bɔːt/",
     "pastParticiple": "bought",
     "pastParticipleIPA": "/bɔːt/",
-    "definition": "买"
+    "definition": "购买"
+  },
+  {
+    "type": "verb",
+    "original": "cast",
+    "ipa": "/kɑːst/",
+    "past": "cast",
+    "pastIPA": "/kɑːst/",
+    "pastParticiple": "cast",
+    "pastParticipleIPA": "/kɑːst/",
+    "definition": "投"
   },
   {
     "type": "verb",
@@ -231,13 +341,103 @@
   },
   {
     "type": "verb",
+    "original": "come",
+    "ipa": "/kʌm/",
+    "past": "came",
+    "pastIPA": "/keɪm/",
+    "pastParticiple": "come",
+    "pastParticipleIPA": "/kʌm/",
+    "definition": "来"
+  },
+  {
+    "type": "verb",
+    "original": "cost",
+    "ipa": "/kɒst/",
+    "past": "cost",
+    "pastIPA": "/kɒst/",
+    "pastParticiple": "cost",
+    "pastParticipleIPA": "/kɒst/",
+    "definition": "花费"
+  },
+  {
+    "type": "verb",
+    "original": "creep",
+    "ipa": "/kriːp/",
+    "past": "crept",
+    "pastIPA": "/kript/",
+    "pastParticiple": "crept",
+    "pastParticipleIPA": "/kript/",
+    "definition": "爬行"
+  },
+  {
+    "type": "verb",
+    "original": "cut",
+    "ipa": "/kʌt/",
+    "past": "cut",
+    "pastIPA": "/kʌt/",
+    "pastParticiple": "cut",
+    "pastParticipleIPA": "/kʌt/",
+    "definition": "切"
+  },
+  {
+    "type": "verb",
+    "original": "deal",
+    "ipa": "/diːl/",
+    "past": "dealt",
+    "pastIPA": "/diːlt/",
+    "pastParticiple": "dealt",
+    "pastParticipleIPA": "/diːlt/",
+    "definition": "处理"
+  },
+  {
+    "type": "verb",
+    "original": "dig",
+    "ipa": "/dɪg/",
+    "past": "dug",
+    "pastIPA": "/dʌg/",
+    "pastParticiple": "dug",
+    "pastParticipleIPA": "/dʌg/",
+    "definition": "挖掘"
+  },
+  {
+    "type": "verb",
+    "original": "dive",
+    "ipa": "/daɪv/",
+    "past": "dived",
+    "pastIPA": "/daɪvd/",
+    "pastParticiple": "dived",
+    "pastParticipleIPA": "/daɪvd/",
+    "definition": "潜水"
+  },
+  {
+    "type": "verb",
+    "original": "do",
+    "ipa": "/duː/",
+    "past": "did",
+    "pastIPA": "/dɪd/",
+    "pastParticiple": "done",
+    "pastParticipleIPA": "/dʌn/",
+    "definition": "做"
+  },
+  {
+    "type": "verb",
     "original": "draw",
-    "ipa": "/drɔː(r)/",
+    "ipa": "/drɔː/",
     "past": "drew",
     "pastIPA": "/druː/",
     "pastParticiple": "drawn",
     "pastParticipleIPA": "/drɔːn/",
-    "definition": "画画"
+    "definition": "画"
+  },
+  {
+    "type": "verb",
+    "original": "dream",
+    "ipa": "/driːm/",
+    "past": "dreamt",
+    "pastIPA": "/driːmt/",
+    "pastParticiple": "dreamt",
+    "pastParticipleIPA": "/driːmt/",
+    "definition": "梦想"
   },
   {
     "type": "verb",
@@ -254,7 +454,7 @@
     "original": "drive",
     "ipa": "/draɪv/",
     "past": "drove",
-    "pastIPA": "/droʊv/",
+    "pastIPA": "/drəʊv/",
     "pastParticiple": "driven",
     "pastParticipleIPA": "/ˈdrɪvən/",
     "definition": "驾驶"
@@ -266,17 +466,47 @@
     "past": "ate",
     "pastIPA": "/eɪt/",
     "pastParticiple": "eaten",
-    "pastParticipleIPA": "/ˈiːtn/",
+    "pastParticipleIPA": "/ˈiːtən/",
     "definition": "吃"
+  },
+  {
+    "type": "verb",
+    "original": "fall",
+    "ipa": "/fɔːl/",
+    "past": "fell",
+    "pastIPA": "/fel/",
+    "pastParticiple": "fallen",
+    "pastParticipleIPA": "/ˈfɔːlən/",
+    "definition": "落下"
+  },
+  {
+    "type": "verb",
+    "original": "feed",
+    "ipa": "/fiːd/",
+    "past": "fed",
+    "pastIPA": "/fed/",
+    "pastParticiple": "fed",
+    "pastParticipleIPA": "/fed/",
+    "definition": "喂养"
+  },
+  {
+    "type": "verb",
+    "original": "feel",
+    "ipa": "/fiːl/",
+    "past": "felt",
+    "pastIPA": "/felt/",
+    "pastParticiple": "felt",
+    "pastParticipleIPA": "/felt/",
+    "definition": "感觉"
   },
   {
     "type": "verb",
     "original": "fight",
     "ipa": "/faɪt/",
     "past": "fought",
-    "pastIPA": "/fɔːt/",
+    "pastIPA": "/faʊt/",
     "pastParticiple": "fought",
-    "pastParticipleIPA": "/fɔːt/",
+    "pastParticipleIPA": "/faʊt/",
     "definition": "战斗"
   },
   {
@@ -287,7 +517,17 @@
     "pastIPA": "/faʊnd/",
     "pastParticiple": "found",
     "pastParticipleIPA": "/faʊnd/",
-    "definition": "找到"
+    "definition": "发现"
+  },
+  {
+    "type": "verb",
+    "original": "flee",
+    "ipa": "/fliː/",
+    "past": "fled",
+    "pastIPA": "/fled/",
+    "pastParticiple": "fled",
+    "pastParticipleIPA": "/fled/",
+    "definition": "逃跑"
   },
   {
     "type": "verb",
@@ -296,8 +536,48 @@
     "past": "flew",
     "pastIPA": "/fluː/",
     "pastParticiple": "flown",
-    "pastParticipleIPA": "/floʊn/",
+    "pastParticipleIPA": "/fləʊn/",
     "definition": "飞"
+  },
+  {
+    "type": "verb",
+    "original": "forbid",
+    "ipa": "/fəˈbɪd/",
+    "past": "forbade",
+    "pastIPA": "/fəˈbeɪd/",
+    "pastParticiple": "forbidden",
+    "pastParticipleIPA": "/fəˈbɪdən/",
+    "definition": "禁止"
+  },
+  {
+    "type": "verb",
+    "original": "forget",
+    "ipa": "/fəˈɡet/",
+    "past": "forgot",
+    "pastIPA": "/fəˈɡɒt/",
+    "pastParticiple": "forgotten",
+    "pastParticipleIPA": "/fəˈɡɒtən/",
+    "definition": "忘记"
+  },
+  {
+    "type": "verb",
+    "original": "forgive",
+    "ipa": "/fəˈɡɪv/",
+    "past": "forgave",
+    "pastIPA": "/fəˈɡeɪv/",
+    "pastParticiple": "forgiven",
+    "pastParticipleIPA": "/fəˈɡɪvən/",
+    "definition": "原谅"
+  },
+  {
+    "type": "verb",
+    "original": "found",
+    "ipa": "/faʊnd/",
+    "past": "founded",
+    "pastIPA": "/ˈfaʊndɪd/",
+    "pastParticiple": "founded",
+    "pastParticipleIPA": "/ˈfaʊndɪd/",
+    "definition": "建立"
   },
   {
     "type": "verb",
@@ -315,8 +595,8 @@
     "ipa": "/ɡet/",
     "past": "got",
     "pastIPA": "/ɡɒt/",
-    "pastParticiple": "got",
-    "pastParticipleIPA": "/ɡɒt/",
+    "pastParticiple": "got/gotten",
+    "pastParticipleIPA": "/ɡɒt/ˈɡɒtən/",
     "definition": "得到"
   },
   {
@@ -334,7 +614,7 @@
     "original": "go",
     "ipa": "/ɡəʊ/",
     "past": "went",
-    "pastIPA": "/went/",
+    "pastIPA": "/wɛnt/",
     "pastParticiple": "gone",
     "pastParticipleIPA": "/ɡɒn/",
     "definition": "去"
@@ -372,12 +652,52 @@
   {
     "type": "verb",
     "original": "hear",
-    "ipa": "/hɪə(r)/",
+    "ipa": "/hɪər/",
     "past": "heard",
     "pastIPA": "/hɜːrd/",
     "pastParticiple": "heard",
     "pastParticipleIPA": "/hɜːrd/",
-    "definition": "听到"
+    "definition": "听见"
+  },
+  {
+    "type": "verb",
+    "original": "hide",
+    "ipa": "/haɪd/",
+    "past": "hid",
+    "pastIPA": "/hɪd/",
+    "pastParticiple": "hidden",
+    "pastParticipleIPA": "/ˈhɪdən/",
+    "definition": "隐藏"
+  },
+  {
+    "type": "verb",
+    "original": "hit",
+    "ipa": "/hɪt/",
+    "past": "hit",
+    "pastIPA": "/hɪt/",
+    "pastParticiple": "hit",
+    "pastParticipleIPA": "/hɪt/",
+    "definition": "打"
+  },
+  {
+    "type": "verb",
+    "original": "hold",
+    "ipa": "/həʊld/",
+    "past": "held",
+    "pastIPA": "/held/",
+    "pastParticiple": "held",
+    "pastParticipleIPA": "/held/",
+    "definition": "持有"
+  },
+  {
+    "type": "verb",
+    "original": "hurt",
+    "ipa": "/hɜːrt/",
+    "past": "hurt",
+    "pastIPA": "/hɜːrt/",
+    "pastParticiple": "hurt",
+    "pastParticipleIPA": "/hɜːrt/",
+    "definition": "伤害"
   },
   {
     "type": "verb",
@@ -431,6 +751,66 @@
   },
   {
     "type": "verb",
+    "original": "leave",
+    "ipa": "/liːv/",
+    "past": "left",
+    "pastIPA": "/left/",
+    "pastParticiple": "left",
+    "pastParticipleIPA": "/left/",
+    "definition": "离开"
+  },
+  {
+    "type": "verb",
+    "original": "lend",
+    "ipa": "/lend/",
+    "past": "lent",
+    "pastIPA": "/lent/",
+    "pastParticiple": "lent",
+    "pastParticipleIPA": "/lent/",
+    "definition": "借出"
+  },
+  {
+    "type": "verb",
+    "original": "let",
+    "ipa": "/let/",
+    "past": "let",
+    "pastIPA": "/let/",
+    "pastParticiple": "let",
+    "pastParticipleIPA": "/let/",
+    "definition": "让"
+  },
+  {
+    "type": "verb",
+    "original": "lie",
+    "ipa": "/laɪ/",
+    "past": "lay",
+    "pastIPA": "/leɪ/",
+    "pastParticiple": "lain",
+    "pastParticipleIPA": "/leɪn/",
+    "definition": "躺"
+  },
+  {
+    "type": "verb",
+    "original": "lie",
+    "ipa": "/laɪ/",
+    "past": "lied",
+    "pastIPA": "/laɪd/",
+    "pastParticiple": "lied",
+    "pastParticipleIPA": "/laɪd/",
+    "definition": "撒谎"
+  },
+  {
+    "type": "verb",
+    "original": "lose",
+    "ipa": "/luːz/",
+    "past": "lost",
+    "pastIPA": "/lɔːst/",
+    "pastParticiple": "lost",
+    "pastParticipleIPA": "/lɔːst/",
+    "definition": "失去"
+  },
+  {
+    "type": "verb",
     "original": "make",
     "ipa": "/meɪk/",
     "past": "made",
@@ -441,13 +821,43 @@
   },
   {
     "type": "verb",
+    "original": "mean",
+    "ipa": "/miːn/",
+    "past": "meant",
+    "pastIPA": "/ment/",
+    "pastParticiple": "meant",
+    "pastParticipleIPA": "/ment/",
+    "definition": "意味着"
+  },
+  {
+    "type": "verb",
     "original": "meet",
     "ipa": "/miːt/",
     "past": "met",
     "pastIPA": "/met/",
     "pastParticiple": "met",
     "pastParticipleIPA": "/met/",
-    "definition": "见面"
+    "definition": "遇见"
+  },
+  {
+    "type": "verb",
+    "original": "mistake",
+    "ipa": "/mɪsˈteɪk/",
+    "past": "mistook",
+    "pastIPA": "/mɪsˈtʊk/",
+    "pastParticiple": "mistaken",
+    "pastParticipleIPA": "/mɪsˈteɪkən/",
+    "definition": "误解"
+  },
+  {
+    "type": "verb",
+    "original": "overcome",
+    "ipa": "/ˌəʊvəˈkʌm/",
+    "past": "overcame",
+    "pastIPA": "/ˌəʊvəˈkeɪm/",
+    "pastParticiple": "overcome",
+    "pastParticipleIPA": "/ˌəʊvəˈkʌm/",
+    "definition": "克服"
   },
   {
     "type": "verb",
@@ -461,23 +871,83 @@
   },
   {
     "type": "verb",
+    "original": "put",
+    "ipa": "/pʊt/",
+    "past": "put",
+    "pastIPA": "/pʊt/",
+    "pastParticiple": "put",
+    "pastParticipleIPA": "/pʊt/",
+    "definition": "放"
+  },
+  {
+    "type": "verb",
+    "original": "quit",
+    "ipa": "/kwɪt/",
+    "past": "quit",
+    "pastIPA": "/kwɪt/",
+    "pastParticiple": "quit",
+    "pastParticipleIPA": "/kwɪt/",
+    "definition": "放弃"
+  },
+  {
+    "type": "verb",
+    "original": "read",
+    "ipa": "/riːd/",
+    "past": "read",
+    "pastIPA": "/red/",
+    "pastParticiple": "read",
+    "pastParticipleIPA": "/red/",
+    "definition": "读"
+  },
+  {
+    "type": "verb",
+    "original": "rid",
+    "ipa": "/rɪd/",
+    "past": "rid",
+    "pastIPA": "/rɪd/",
+    "pastParticiple": "rid",
+    "pastParticipleIPA": "/rɪd/",
+    "definition": "摆脱"
+  },
+  {
+    "type": "verb",
+    "original": "ride",
+    "ipa": "/raɪd/",
+    "past": "rode",
+    "pastIPA": "/rəʊd/",
+    "pastParticiple": "ridden",
+    "pastParticipleIPA": "/ˈrɪdən/",
+    "definition": "骑"
+  },
+  {
+    "type": "verb",
     "original": "ring",
     "ipa": "/rɪŋ/",
     "past": "rang",
     "pastIPA": "/ræŋ/",
-    "pastParticiple": "rung",
-    "pastParticipleIPA": "/rʌŋ/",
-    "definition": "响铃"
+    "pastParticiple": "rungen",
+    "pastParticipleIPA": "/ˈrʌŋɡən/",
+    "definition": "打电话"
+  },
+  {
+    "type": "verb",
+    "original": "ring",
+    "ipa": "/rɪŋ/",
+    "past": "rang",
+    "pastIPA": "/ræŋ/",
+    "pastParticiple": "rungen",
+    "pastParticipleIPA": "/ˈrʌŋɡən/",
+    "definition": "响"
   },
   {
     "type": "verb",
     "original": "rise",
     "ipa": "/raɪz/",
     "past": "rose",
-    "pastIPA": "/roʊz/",
+    "pastIPA": "/rəʊz/",
     "pastParticiple": "risen",
     "pastParticipleIPA": "/ˈraɪzən/",
-    "definition": "升起"
+    "definition": "上升"
   },
   {
     "type": "verb",
@@ -494,9 +964,9 @@
     "original": "say",
     "ipa": "/seɪ/",
     "past": "said",
-    "pastIPA": "/sed/",
+    "pastIPA": "/sɛd/",
     "pastParticiple": "said",
-    "pastParticipleIPA": "/sed/",
+    "pastParticipleIPA": "/sɛd/",
     "definition": "说"
   },
   {
@@ -508,6 +978,16 @@
     "pastParticiple": "seen",
     "pastParticipleIPA": "/siːn/",
     "definition": "看见"
+  },
+  {
+    "type": "verb",
+    "original": "seek",
+    "ipa": "/siːk/",
+    "past": "sought",
+    "pastIPA": "/sɔːt/",
+    "pastParticiple": "sought",
+    "pastParticipleIPA": "/sɔːt/",
+    "definition": "寻找"
   },
   {
     "type": "verb",
@@ -531,13 +1011,103 @@
   },
   {
     "type": "verb",
+    "original": "set",
+    "ipa": "/set/",
+    "past": "set",
+    "pastIPA": "/set/",
+    "pastParticiple": "set",
+    "pastParticipleIPA": "/set/",
+    "definition": "放"
+  },
+  {
+    "type": "verb",
+    "original": "shake",
+    "ipa": "/ʃeɪk/",
+    "past": "shook",
+    "pastIPA": "/ʃʊk/",
+    "pastParticiple": "shaken",
+    "pastParticipleIPA": "/ˈʃeɪkən/",
+    "definition": "摇动"
+  },
+  {
+    "type": "verb",
+    "original": "shed",
+    "ipa": "/ʃed/",
+    "past": "shed",
+    "pastIPA": "/ʃed/",
+    "pastParticiple": "shed",
+    "pastParticipleIPA": "/ʃed/",
+    "definition": "流"
+  },
+  {
+    "type": "verb",
+    "original": "shine",
+    "ipa": "/ʃaɪn/",
+    "past": "shone",
+    "pastIPA": "/ʃɒn/",
+    "pastParticiple": "shone",
+    "pastParticipleIPA": "/ʃɒn/",
+    "definition": "发光"
+  },
+  {
+    "type": "verb",
+    "original": "shoot",
+    "ipa": "/ʃuːt/",
+    "past": "shot",
+    "pastIPA": "/ʃɒt/",
+    "pastParticiple": "shot",
+    "pastParticipleIPA": "/ʃɒt/",
+    "definition": "射击"
+  },
+  {
+    "type": "verb",
+    "original": "show",
+    "ipa": "/ʃəʊ/",
+    "past": "showed",
+    "pastIPA": "/ʃəʊd/",
+    "pastParticiple": "shown",
+    "pastParticipleIPA": "/ʃəʊn/",
+    "definition": "展示"
+  },
+  {
+    "type": "verb",
+    "original": "shut",
+    "ipa": "/ʃʌt/",
+    "past": "shut",
+    "pastIPA": "/ʃʌt/",
+    "pastParticiple": "shut",
+    "pastParticipleIPA": "/ʃʌt/",
+    "definition": "关"
+  },
+  {
+    "type": "verb",
     "original": "sing",
     "ipa": "/sɪŋ/",
     "past": "sang",
     "pastIPA": "/sæŋ/",
     "pastParticiple": "sung",
     "pastParticipleIPA": "/sʌŋ/",
-    "definition": "唱"
+    "definition": "唱歌"
+  },
+  {
+    "type": "verb",
+    "original": "sink",
+    "ipa": "/sɪŋk/",
+    "past": "sank",
+    "pastIPA": "/sæŋk/",
+    "pastParticiple": "sunk",
+    "pastParticipleIPA": "/sʌŋk/",
+    "definition": "下沉"
+  },
+  {
+    "type": "verb",
+    "original": "sink",
+    "ipa": "/sɪŋk/",
+    "past": "sank",
+    "pastIPA": "/sæŋk/",
+    "pastParticiple": "sunk",
+    "pastParticipleIPA": "/sʌŋk/",
+    "definition": "沉没"
   },
   {
     "type": "verb",
@@ -561,13 +1131,53 @@
   },
   {
     "type": "verb",
+    "original": "slide",
+    "ipa": "/slaɪd/",
+    "past": "slid",
+    "pastIPA": "/slɪd/",
+    "pastParticiple": "slid",
+    "pastParticipleIPA": "/slɪd/",
+    "definition": "滑动"
+  },
+  {
+    "type": "verb",
+    "original": "smell",
+    "ipa": "/smel/",
+    "past": "smelt",
+    "pastIPA": "/smelt/",
+    "pastParticiple": "smelt",
+    "pastParticipleIPA": "/smelt/",
+    "definition": "闻"
+  },
+  {
+    "type": "verb",
     "original": "speak",
     "ipa": "/spiːk/",
     "past": "spoke",
-    "pastIPA": "/spoʊk/",
+    "pastIPA": "/spəʊk/",
     "pastParticiple": "spoken",
-    "pastParticipleIPA": "/ˈspoʊkən/",
+    "pastParticipleIPA": "/ˈspəʊkən/",
     "definition": "说"
+  },
+  {
+    "type": "verb",
+    "original": "speed",
+    "ipa": "/spiːd/",
+    "past": "sped",
+    "pastIPA": "/sped/",
+    "pastParticiple": "sped",
+    "pastParticipleIPA": "/sped/",
+    "definition": "加速"
+  },
+  {
+    "type": "verb",
+    "original": "spell",
+    "ipa": "/spel/",
+    "past": "spelt",
+    "pastIPA": "/spelt/",
+    "pastParticiple": "spelt",
+    "pastParticipleIPA": "/spelt/",
+    "definition": "拼写"
   },
   {
     "type": "verb",
@@ -578,6 +1188,76 @@
     "pastParticiple": "spent",
     "pastParticipleIPA": "/spent/",
     "definition": "花费"
+  },
+  {
+    "type": "verb",
+    "original": "spill",
+    "ipa": "/spɪl/",
+    "past": "spilt",
+    "pastIPA": "/spɪlt/",
+    "pastParticiple": "spilt",
+    "pastParticipleIPA": "/spɪlt/",
+    "definition": "溢出"
+  },
+  {
+    "type": "verb",
+    "original": "spin",
+    "ipa": "/spɪn/",
+    "past": "spun",
+    "pastIPA": "/spʌn/",
+    "pastParticiple": "spun",
+    "pastParticipleIPA": "/spʌn/",
+    "definition": "旋转"
+  },
+  {
+    "type": "verb",
+    "original": "spit",
+    "ipa": "/spɪt/",
+    "past": "spat",
+    "pastIPA": "/spæt/",
+    "pastParticiple": "spat",
+    "pastParticipleIPA": "/spæt/",
+    "definition": "吐痰"
+  },
+  {
+    "type": "verb",
+    "original": "split",
+    "ipa": "/splɪt/",
+    "past": "split",
+    "pastIPA": "/splɪt/",
+    "pastParticiple": "split",
+    "pastParticipleIPA": "/splɪt/",
+    "definition": "分裂"
+  },
+  {
+    "type": "verb",
+    "original": "spoil",
+    "ipa": "/spɔɪl/",
+    "past": "spoilt",
+    "pastIPA": "/spɔɪlt/",
+    "pastParticiple": "spoilt",
+    "pastParticipleIPA": "/spɔɪlt/",
+    "definition": "宠坏"
+  },
+  {
+    "type": "verb",
+    "original": "spread",
+    "ipa": "/spred/",
+    "past": "spread",
+    "pastIPA": "/spred/",
+    "pastParticiple": "spread",
+    "pastParticipleIPA": "/spred/",
+    "definition": "传播"
+  },
+  {
+    "type": "verb",
+    "original": "spring",
+    "ipa": "/sprɪŋ/",
+    "past": "sprang",
+    "pastIPA": "/spræŋ/",
+    "pastParticiple": "sprung",
+    "pastParticipleIPA": "/sprʌŋ/",
+    "definition": "跳"
   },
   {
     "type": "verb",
@@ -594,10 +1274,50 @@
     "original": "steal",
     "ipa": "/stiːl/",
     "past": "stole",
-    "pastIPA": "/stoʊl/",
+    "pastIPA": "/stəʊl/",
     "pastParticiple": "stolen",
-    "pastParticipleIPA": "/ˈstoʊlən/",
+    "pastParticipleIPA": "/ˈstəʊlən/",
     "definition": "偷"
+  },
+  {
+    "type": "verb",
+    "original": "stick",
+    "ipa": "/stɪk/",
+    "past": "stuck",
+    "pastIPA": "/stʌk/",
+    "pastParticiple": "stuck",
+    "pastParticipleIPA": "/stʌk/",
+    "definition": "粘贴"
+  },
+  {
+    "type": "verb",
+    "original": "sting",
+    "ipa": "/stɪŋ/",
+    "past": "stung",
+    "pastIPA": "/stʌŋ/",
+    "pastParticiple": "stung",
+    "pastParticipleIPA": "/stʌŋ/",
+    "definition": "刺痛"
+  },
+  {
+    "type": "verb",
+    "original": "strike",
+    "ipa": "/straɪk/",
+    "past": "struck",
+    "pastIPA": "/strʌk/",
+    "pastParticiple": "struck",
+    "pastParticipleIPA": "/strʌk/",
+    "definition": "罢工"
+  },
+  {
+    "type": "verb",
+    "original": "sweep",
+    "ipa": "/swiːp/",
+    "past": "swept",
+    "pastIPA": "/swelt/",
+    "pastParticiple": "swept",
+    "pastParticipleIPA": "/swelt/",
+    "definition": "扫"
   },
   {
     "type": "verb",
@@ -608,6 +1328,16 @@
     "pastParticiple": "swum",
     "pastParticipleIPA": "/swʌm/",
     "definition": "游泳"
+  },
+  {
+    "type": "verb",
+    "original": "swing",
+    "ipa": "/swɪŋ/",
+    "past": "swung",
+    "pastIPA": "/swʌŋ/",
+    "pastParticiple": "swung",
+    "pastParticipleIPA": "/swʌŋ/",
+    "definition": "摆动"
   },
   {
     "type": "verb",
@@ -632,7 +1362,7 @@
   {
     "type": "verb",
     "original": "tear",
-    "ipa": "/tɪə(r)/",
+    "ipa": "/teər/",
     "past": "tore",
     "pastIPA": "/tɔːr/",
     "pastParticiple": "torn",
@@ -641,8 +1371,48 @@
   },
   {
     "type": "verb",
+    "original": "tell",
+    "ipa": "/tel/",
+    "past": "told",
+    "pastIPA": "/təʊld/",
+    "pastParticiple": "told",
+    "pastParticipleIPA": "/təʊld/",
+    "definition": "告诉"
+  },
+  {
+    "type": "verb",
+    "original": "think",
+    "ipa": "/θɪŋk/",
+    "past": "thought",
+    "pastIPA": "/θɔːt/",
+    "pastParticiple": "thought",
+    "pastParticipleIPA": "/θɔːt/",
+    "definition": "思考"
+  },
+  {
+    "type": "verb",
+    "original": "throw",
+    "ipa": "/θrəʊ/",
+    "past": "threw",
+    "pastIPA": "/θruː/",
+    "pastParticiple": "thrown",
+    "pastParticipleIPA": "/θrəʊn/",
+    "definition": "扔"
+  },
+  {
+    "type": "verb",
+    "original": "thrust",
+    "ipa": "/θrʌst/",
+    "past": "thrust",
+    "pastIPA": "/θrʌst/",
+    "pastParticiple": "thrust",
+    "pastParticipleIPA": "/θrʌst/",
+    "definition": "推"
+  },
+  {
+    "type": "verb",
     "original": "understand",
-    "ipa": "/ˌʌndərstænd/",
+    "ipa": "/ˌʌndərˈstænd/",
     "past": "understood",
     "pastIPA": "/ˌʌndərˈstʊd/",
     "pastParticiple": "understood",
@@ -651,20 +1421,70 @@
   },
   {
     "type": "verb",
+    "original": "upset",
+    "ipa": "/ʌpˈset/",
+    "past": "upset",
+    "pastIPA": "/ʌpˈset/",
+    "pastParticiple": "upset",
+    "pastParticipleIPA": "/ʌpˈset/",
+    "definition": "使心烦"
+  },
+  {
+    "type": "verb",
+    "original": "wake",
+    "ipa": "/weɪk/",
+    "past": "woke",
+    "pastIPA": "/wəʊk/",
+    "pastParticiple": "woken",
+    "pastParticipleIPA": "/ˈwəʊkən/",
+    "definition": "唤醒"
+  },
+  {
+    "type": "verb",
     "original": "wear",
-    "ipa": "/weə(r)/",
+    "ipa": "/weər/",
     "past": "wore",
-    "pastIPA": "/wɔː(r)/",
+    "pastIPA": "/wɔːr/",
     "pastParticiple": "worn",
     "pastParticipleIPA": "/wɔːrn/",
     "definition": "穿"
   },
   {
     "type": "verb",
+    "original": "weep",
+    "ipa": "/wiːp/",
+    "past": "wept",
+    "pastIPA": "/wept/",
+    "pastParticiple": "wept",
+    "pastParticipleIPA": "/wept/",
+    "definition": "哭泣"
+  },
+  {
+    "type": "verb",
+    "original": "wet",
+    "ipa": "/wet/",
+    "past": "wet",
+    "pastIPA": "/wet/",
+    "pastParticiple": "wet",
+    "pastParticipleIPA": "/wet/",
+    "definition": "弄湿"
+  },
+  {
+    "type": "verb",
+    "original": "win",
+    "ipa": "/wɪn/",
+    "past": "won",
+    "pastIPA": "/wɒn/",
+    "pastParticiple": "won",
+    "pastParticipleIPA": "/wɒn/",
+    "definition": "赢"
+  },
+  {
+    "type": "verb",
     "original": "write",
     "ipa": "/raɪt/",
     "past": "wrote",
-    "pastIPA": "/roʊt/",
+    "pastIPA": "/rəʊt/",
     "pastParticiple": "written",
     "pastParticipleIPA": "/ˈrɪtən/",
     "definition": "写"

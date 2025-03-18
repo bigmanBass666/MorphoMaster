@@ -1,3 +1,5 @@
+// run command: "node data/sort-words.js"
+
 // sort-words.js
 const fs = require('fs');
 const path = require('path');
