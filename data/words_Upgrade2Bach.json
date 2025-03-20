@@ -571,16 +571,6 @@
   },
   {
     "type": "verb",
-    "original": "found",
-    "ipa": "/faʊnd/",
-    "past": "founded",
-    "pastIPA": "/ˈfaʊndɪd/",
-    "pastParticiple": "founded",
-    "pastParticipleIPA": "/ˈfaʊndɪd/",
-    "definition": "建立"
-  },
-  {
-    "type": "verb",
     "original": "freeze",
     "ipa": "/friːz/",
     "past": "froze",
@@ -925,19 +915,19 @@
     "ipa": "/rɪŋ/",
     "past": "rang",
     "pastIPA": "/ræŋ/",
-    "pastParticiple": "rungen",
-    "pastParticipleIPA": "/ˈrʌŋɡən/",
-    "definition": "打电话"
+    "pastParticiple": "rung",
+    "pastParticipleIPA": "/ˈrʌŋ/",
+    "definition": "铃响"
   },
   {
     "type": "verb",
     "original": "ring",
     "ipa": "/rɪŋ/",
-    "past": "rang",
-    "pastIPA": "/ræŋ/",
-    "pastParticiple": "rungen",
-    "pastParticipleIPA": "/ˈrʌŋɡən/",
-    "definition": "响"
+    "past": "ringed",
+    "pastIPA": "/rɪŋd/",
+    "pastParticiple": "ringed",
+    "pastParticipleIPA": "/rɪŋd/",
+    "definition": "环绕"
   },
   {
     "type": "verb",
@@ -1095,19 +1085,9 @@
     "ipa": "/sɪŋk/",
     "past": "sank",
     "pastIPA": "/sæŋk/",
-    "pastParticiple": "sunk",
-    "pastParticipleIPA": "/sʌŋk/",
+    "pastParticiple": "sunk/sunken",
+    "pastParticipleIPA": "/sʌŋk/sʌŋk",
     "definition": "下沉"
-  },
-  {
-    "type": "verb",
-    "original": "sink",
-    "ipa": "/sɪŋk/",
-    "past": "sank",
-    "pastIPA": "/sæŋk/",
-    "pastParticiple": "sunk",
-    "pastParticipleIPA": "/sʌŋk/",
-    "definition": "沉没"
   },
   {
     "type": "verb",

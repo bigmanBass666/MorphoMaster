@@ -1,6 +1,7 @@
 import { state } from '../state.js'
 
-const SPECIAL_CHARS_REGEX = /[-\/\\^$*+?.()|[\]{}]/g
+// const SPECIAL_CHARS_REGEX = /[-\/\\^$*+?.()|[\]{}]/g
+const SPECIAL_CHARS_REGEX = /[-\\^$*+?.()|[\]{}]/g // 不限制斜杠/
 
 function normalizeInput(input) {
   return input

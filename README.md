@@ -77,7 +77,6 @@ morphomaster/
 2. 使用侧边按钮或快捷键导航：
    - `Alt+H`: 上一个单词
    - `Alt+L`: 下一个单词
-   - `Alt+C`: 庆祝模式 🎉
    - `Alt+T`: 切换主题
 
 ### 功能演示
@@ -92,6 +91,10 @@ function validateNoun(input) {
 ## 📜 许可证
 
 [MIT License](LICENSE) © 2024 [Your Name]
+
+## todo
+
+⬜ 错题回顾
 
 ## 🌟 特别致谢
 
