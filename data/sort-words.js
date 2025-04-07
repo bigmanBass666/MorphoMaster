@@ -1,4 +1,4 @@
-// run command: "node data/sort-words.js"
+// ! command -> "node data/sort-words.js"
 
 // sort-words.js
 const fs = require('fs');

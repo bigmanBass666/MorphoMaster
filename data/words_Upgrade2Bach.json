@@ -161,6 +161,16 @@
   },
   {
     "type": "verb",
+    "original": "beat",
+    "ipa": "/biːt/",
+    "past": "beat",
+    "pastIPA": "/biːt/",
+    "pastParticiple": "beaten",
+    "pastParticipleIPA": "/ˈbiːtən/",
+    "definition": "击败"
+  },
+  {
+    "type": "verb",
     "original": "become",
     "ipa": "/bɪˈkʌm/",
     "past": "became",
