@@ -841,6 +841,16 @@
   },
   {
     "type": "verb",
+    "original": "mislead",
+    "ipa": "/mɪsˈliːd/",
+    "past": "misled",
+    "pastIPA": "/mɪsˈled/",
+    "pastParticiple": "misled",
+    "pastParticipleIPA": "/mɪsˈled/",
+    "definition": "误导"
+  },
+  {
+    "type": "verb",
     "original": "mistake",
     "ipa": "/mɪsˈteɪk/",
     "past": "mistook",
@@ -1038,6 +1048,16 @@
     "pastParticiple": "shed",
     "pastParticipleIPA": "/ʃed/",
     "definition": "流"
+  },
+  {
+    "type": "verb",
+    "original": "shine",
+    "ipa": "/ʃaɪn/",
+    "past": "shone",
+    "pastIPA": "/ʃɒn/",
+    "pastParticiple": "shone",
+    "pastParticipleIPA": "/ʃɒn/",
+    "definition": "发光"
   },
   {
     "type": "verb",
@@ -1297,6 +1317,16 @@
     "pastIPA": "/strʌk/",
     "pastParticiple": "struck",
     "pastParticipleIPA": "/strʌk/",
+    "definition": "打击"
+  },
+  {
+    "type": "verb",
+    "original": "strike",
+    "ipa": "/straɪk/",
+    "past": "struck",
+    "pastIPA": "/strʌk/",
+    "pastParticiple": "struck",
+    "pastParticipleIPA": "/strʌk/",
     "definition": "罢工"
   },
   {
@@ -1468,6 +1498,16 @@
     "pastParticiple": "won",
     "pastParticipleIPA": "/wɒn/",
     "definition": "赢"
+  },
+  {
+    "type": "verb",
+    "original": "withdraw",
+    "ipa": "/wɪðˈdrɔː/",
+    "past": "withdrew",
+    "pastIPA": "/wɪðˈdruː/",
+    "pastParticiple": "withdrawn",
+    "pastParticipleIPA": "/wɪðˈdrɔːn/",
+    "definition": "撤回"
   },
   {
     "type": "verb",
