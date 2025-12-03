@@ -1,7 +1,7 @@
 export function toggleConfetti() {
   // 动态导入 confetti 库
   import('../libs/confetti.browser.min.js').then(() => {
-    let end = Date.now() + 10 * 1000
+    let end = Date.now() + 5 * 1000 //  设置动画结束时间，当前时间往后推5秒
 
     // go Buckeyes!
     let colors = document.body.classList.contains('dark-mode')

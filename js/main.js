@@ -71,9 +71,9 @@ document.addEventListener('keydown', (e) => {
       case 'l':
         nextWord()
         break
-      // case 'c':
-      //   toggleConfetti()
-      //   break
+      case 'i':
+        toggleConfetti()
+        break
       case 't':
         toggleTheme()
         break
