@@ -51,7 +51,7 @@ cd morphomaster
 
 ## 📂 项目结构
 
-```text
+``` bash
 morphomaster/
 ├── data/                 # 词库文件
 │   ├── words_CET4.json
