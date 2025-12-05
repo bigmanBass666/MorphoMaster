@@ -1,7 +1,7 @@
 // main.js
 import { API_ENDPOINTS } from './config.js'
 import { checkAnswers } from './modules/answer.js'
-import { toggleConfetti } from './modules/confetti.js'
+// import { toggleConfetti } from './modules/confetti.js'
 import { setupEnterHandler } from './modules/input.js'
 import { nextWord, previousWord } from './modules/navigation.js'
 import { updateCurrentWord } from './modules/word.js'
@@ -65,16 +65,16 @@ setupEnterHandler(
 document.addEventListener('keydown', (e) => {
   if (e.altKey) {
     switch (e.key) {
-      case 'h':
+      case 'h': // 上一个单词
         previousWord()
         break
-      case 'l':
+      case 'l': // 下一个单词
         nextWord()
         break
-      case 'i':
-        toggleConfetti()
-        break
-      case 't':
+      // case 'i': // 开启/关闭烟花
+      //   toggleConfetti()
+      //   break
+      case 't': // 切换主题
         toggleTheme()
         break
     }
