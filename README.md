@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![MorphoMaster Logo](assets/favicon.ico)
+![MorphoMaster Logo](assets/favicon.png)
 
 一个专业的英语单词形态变化学习工具，帮助用户掌握英语名词复数形式和动词时态变化。
 
