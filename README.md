@@ -18,7 +18,8 @@
 ## 🏆 项目荣誉
 
 - **学校软件设计大赛二等奖** - 该项目在学校举办的软件设计大赛中获得二等奖，得到了教育专家和评审委员会的认可
-- 奖状照片：待上传（你可以在 `assets/award-certificate.jpg` 或类似位置上传奖状照片）
+
+![软件设计大赛二等奖证书](assets/award-certificate.jpg)
 
 ## 📖 项目简介
 
@@ -135,7 +136,7 @@ php -S localhost:8000
 MorphoMaster/
 ├── assets/                 # 静态资源
 │   ├── favicon.ico        # 网站图标
-│   ├── award-certificate.jpg # 奖状照片（待上传）
+│   ├── award-certificate.jpg # 软件设计大赛二等奖奖状照片
 │   └── icons/             # 图标资源
 │       ├── checkmark.png  # 正确标记
 │       └── cross.png      # 错误标记
