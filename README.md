@@ -15,6 +15,11 @@
 
 </div>
 
+## 🏆 项目荣誉
+
+- **学校软件设计大赛二等奖** - 该项目在学校举办的软件设计大赛中获得二等奖，得到了教育专家和评审委员会的认可
+- 奖状照片：待上传（你可以在 `assets/award-certificate.jpg` 或类似位置上传奖状照片）
+
 ## 📖 项目简介
 
 MorphoMaster 是一款专为英语学习者设计的交互式单词形态变化学习工具。它通过简洁直观的界面，帮助用户掌握英语名词复数形式和动词时态变化，提高英语词汇应用能力。
@@ -130,6 +135,7 @@ php -S localhost:8000
 MorphoMaster/
 ├── assets/                 # 静态资源
 │   ├── favicon.ico        # 网站图标
+│   ├── award-certificate.jpg # 奖状照片（待上传）
 │   └── icons/             # 图标资源
 │       ├── checkmark.png  # 正确标记
 │       └── cross.png      # 错误标记
